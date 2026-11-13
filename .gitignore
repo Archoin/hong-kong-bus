@@ -1,0 +1,6 @@
+.godot/
+.DS_Store
+*.blend1
+captures/*
+!captures/.gdignore
+builds/
