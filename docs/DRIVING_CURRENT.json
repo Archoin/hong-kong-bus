@@ -1,0 +1,29 @@
+{
+  "brake_distance_from_22ms": 10.9430541992188,
+  "braking_distance_23": 11.976863861084,
+  "braking_distance_30": 20.0423469543457,
+  "head_on_speed": 0.00000442565199688696,
+  "head_on_z": -11.5490598678589,
+  "hill_climb_on_floor": true,
+  "hill_climb_y": 12.1403999328613,
+  "hill_descent_on_floor": true,
+  "hill_descent_y": 1.50758242607117,
+  "hill_park_drift": 0.0,
+  "hill_pitch_degrees": 12.0000131405351,
+  "reverse_recovery_distance": 5.18085765838623,
+  "scrape_exit_speed": 22.9408153400421,
+  "scrape_travel": 29.9609401375055,
+  "speed_after_2s": 22.0,
+  "turn_degrees_at_23": 87.2355858907531,
+  "turn_degrees_at_8": 78.6123217994502,
+  "turn_position_at_23": [
+    -11.0288982391357,
+    -0.0190589129924774,
+    -14.9325170516968
+  ],
+  "turn_position_at_8": [
+    -3.83177590370178,
+    -0.0190581809729338,
+    -5.68590974807739
+  ]
+}

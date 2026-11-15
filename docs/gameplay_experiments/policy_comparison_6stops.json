@@ -1,0 +1,3318 @@
+{
+  "aggregate": {
+    "always_fill": {
+      "boarding_modes": 1.0,
+      "cash": 1991.0,
+      "completion_ratio": 0.935056502568011,
+      "contracts": 0.0,
+      "delivered": 70.0,
+      "distance_m": 2236.0,
+      "dwell_fraction": 0.197500000000001,
+      "unique_stops": 6.0
+    },
+    "dispatch": {
+      "boarding_modes": 1.33333333333333,
+      "cash": 1712.0,
+      "completion_ratio": 0.937543133195307,
+      "contracts": 4.66666666666667,
+      "delivered": 34.1666666666667,
+      "distance_m": 2582.16666666667,
+      "dwell_fraction": 0.106296296296296,
+      "unique_stops": 6.0
+    },
+    "express": {
+      "boarding_modes": 2.0,
+      "cash": 1370.16666666667,
+      "completion_ratio": 0.973779567568387,
+      "contracts": 0.0,
+      "delivered": 48.3333333333333,
+      "distance_m": 2422.5,
+      "dwell_fraction": 0.142777777777778,
+      "unique_stops": 5.83333333333333
+    }
+  },
+  "duration": 180,
+  "method": "Abstract graph-time simulation; no collisions or human skill. Same seed, local demand and three greedy rivals for each policy. All stopping earns NEAT docking only. Service 0.25s board / 0.17s alight.",
+  "runs": [
+    {
+      "boarded": 66,
+      "boarding_modes": 1,
+      "cash": 1785,
+      "completion_ratio": 0.924242424242424,
+      "contracts": 0,
+      "decision_log": [
+        {
+          "action": "drive",
+          "at": 3.8,
+          "from": 0,
+          "reason": "local",
+          "riders": 14,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 14.5,
+          "from": 5,
+          "reason": "local",
+          "riders": 18,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 31.1,
+          "from": 1,
+          "reason": "local",
+          "riders": 13,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 41.9,
+          "from": 2,
+          "reason": "local",
+          "riders": 11,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 49.0,
+          "from": 3,
+          "reason": "local",
+          "riders": 9,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 59.9,
+          "from": 4,
+          "reason": "local",
+          "riders": 4,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 73.7,
+          "from": 2,
+          "reason": "local",
+          "riders": 3,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 81.0,
+          "from": 3,
+          "reason": "local",
+          "riders": 7,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 91.5,
+          "from": 4,
+          "reason": "local",
+          "riders": 7,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 105.7,
+          "from": 2,
+          "reason": "local",
+          "riders": 6,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 116.3,
+          "from": 1,
+          "reason": "local",
+          "riders": 5,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 126.8,
+          "from": 2,
+          "reason": "local",
+          "riders": 7,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 133.5,
+          "from": 3,
+          "reason": "local",
+          "riders": 7,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 147.6,
+          "from": 1,
+          "reason": "local",
+          "riders": 4,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 157.1,
+          "from": 0,
+          "reason": "local",
+          "riders": 4,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 163.3,
+          "from": 5,
+          "reason": "local",
+          "riders": 2,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 173.7,
+          "from": 4,
+          "reason": "local",
+          "riders": 5,
+          "to": 5
+        }
+      ],
+      "delivered": 61,
+      "dispatch_income": 0,
+      "distance_m": 2233.0,
+      "dwell_fraction": 0.177222222222223,
+      "failed_contracts": 0,
+      "policy": "always_fill",
+      "rival_cash": [
+        1281,
+        1573,
+        928
+      ],
+      "route": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4,
+        2,
+        3,
+        4,
+        2,
+        1,
+        2,
+        3,
+        1,
+        0,
+        5,
+        4
+      ],
+      "seed": 41,
+      "tips": 401,
+      "unique_stops": 6
+    },
+    {
+      "boarded": 52,
+      "boarding_modes": 2,
+      "cash": 1340,
+      "completion_ratio": 0.942307692307692,
+      "contracts": 0,
+      "decision_log": [
+        {
+          "action": "drive",
+          "at": 2.5,
+          "from": 0,
+          "reason": "local",
+          "riders": 9,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 12.2,
+          "from": 5,
+          "reason": "local",
+          "riders": 9,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 27.9,
+          "from": 1,
+          "reason": "local",
+          "riders": 4,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 38.3,
+          "from": 2,
+          "reason": "local",
+          "riders": 2,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 45.0,
+          "from": 3,
+          "reason": "local",
+          "riders": 2,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 51.5,
+          "from": 2,
+          "reason": "local",
+          "riders": 1,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 61.9,
+          "from": 1,
+          "reason": "local",
+          "riders": 4,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 72.0,
+          "from": 2,
+          "reason": "local",
+          "riders": 1,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 85.4,
+          "from": 4,
+          "reason": "local",
+          "riders": 0,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 95.8,
+          "from": 5,
+          "reason": "local",
+          "riders": 5,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 103.3,
+          "from": 0,
+          "reason": "local",
+          "riders": 3,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 113.4,
+          "from": 1,
+          "reason": "local",
+          "riders": 2,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 123.4,
+          "from": 2,
+          "reason": "local",
+          "riders": 2,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 133.2,
+          "from": 1,
+          "reason": "local",
+          "riders": 1,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 142.7,
+          "from": 0,
+          "reason": "local",
+          "riders": 1,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 148.8,
+          "from": 5,
+          "reason": "local",
+          "riders": 0,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 158.7,
+          "from": 4,
+          "reason": "local",
+          "riders": 3,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 168.9,
+          "from": 5,
+          "reason": "local",
+          "riders": 2,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 175.0,
+          "from": 0,
+          "reason": "local",
+          "riders": 3,
+          "to": 1
+        }
+      ],
+      "delivered": 49,
+      "dispatch_income": 0,
+      "distance_m": 2293.0,
+      "dwell_fraction": 0.14888888888889,
+      "failed_contracts": 0,
+      "policy": "express",
+      "rival_cash": [
+        1149,
+        1615,
+        1634
+      ],
+      "route": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        2,
+        1,
+        2,
+        4,
+        5,
+        0,
+        1,
+        2,
+        1,
+        0,
+        5,
+        4,
+        5,
+        0
+      ],
+      "seed": 41,
+      "tips": 270,
+      "unique_stops": 6
+    },
+    {
+      "boarded": 36,
+      "boarding_modes": 1,
+      "cash": 1667,
+      "completion_ratio": 0.916666666666667,
+      "contracts": 4,
+      "decision_log": [
+        {
+          "action": "accept",
+          "at": 0.0,
+          "dest": 3,
+          "id": 1,
+          "pickup": 0
+        },
+        {
+          "action": "drive",
+          "at": 1.5,
+          "from": 0,
+          "reason": "dispatch_deliver",
+          "riders": 5,
+          "to": 3
+        },
+        {
+          "action": "accept",
+          "at": 18.9,
+          "dest": 4,
+          "id": 3,
+          "pickup": 2
+        },
+        {
+          "action": "drive",
+          "at": 18.9,
+          "from": 3,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 25.8,
+          "from": 2,
+          "reason": "dispatch_deliver",
+          "riders": 4,
+          "to": 4
+        },
+        {
+          "action": "accept",
+          "at": 39.7,
+          "dest": 1,
+          "id": 5,
+          "pickup": 4
+        },
+        {
+          "action": "drive",
+          "at": 39.7,
+          "from": 4,
+          "reason": "local",
+          "riders": 0,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 53.6,
+          "from": 0,
+          "reason": "dispatch_collect",
+          "riders": 3,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 68.0,
+          "from": 4,
+          "reason": "dispatch_deliver",
+          "riders": 8,
+          "to": 1
+        },
+        {
+          "action": "accept",
+          "at": 81.1,
+          "dest": 3,
+          "id": 7,
+          "pickup": 5
+        },
+        {
+          "action": "drive",
+          "at": 83.3,
+          "from": 1,
+          "reason": "dispatch_collect",
+          "riders": 2,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 97.7,
+          "from": 5,
+          "reason": "dispatch_deliver",
+          "riders": 7,
+          "to": 3
+        },
+        {
+          "action": "accept",
+          "at": 115.4,
+          "dest": 0,
+          "id": 9,
+          "pickup": 3
+        },
+        {
+          "action": "drive",
+          "at": 115.4,
+          "from": 3,
+          "reason": "local",
+          "riders": 0,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 121.3,
+          "from": 2,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 128.4,
+          "from": 3,
+          "reason": "dispatch_deliver",
+          "riders": 5,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 145.8,
+          "from": 0,
+          "reason": "local",
+          "riders": 0,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 163.3,
+          "from": 2,
+          "reason": "local",
+          "riders": 4,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 177.9,
+          "from": 4,
+          "reason": "local",
+          "riders": 3,
+          "to": 5
+        }
+      ],
+      "delivered": 33,
+      "dispatch_income": 694,
+      "distance_m": 2635.0,
+      "dwell_fraction": 0.102777777777778,
+      "failed_contracts": 1,
+      "policy": "dispatch",
+      "rival_cash": [
+        1465,
+        1721,
+        1833
+      ],
+      "route": [
+        0,
+        3,
+        2,
+        4,
+        0,
+        4,
+        1,
+        5,
+        3,
+        2,
+        3,
+        0,
+        2,
+        4
+      ],
+      "seed": 41,
+      "tips": 127,
+      "unique_stops": 6
+    },
+    {
+      "boarded": 78,
+      "boarding_modes": 1,
+      "cash": 2096,
+      "completion_ratio": 0.948717948717949,
+      "contracts": 0,
+      "decision_log": [
+        {
+          "action": "drive",
+          "at": 3.5,
+          "from": 0,
+          "reason": "local",
+          "riders": 13,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 13.5,
+          "from": 5,
+          "reason": "local",
+          "riders": 16,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 29.2,
+          "from": 1,
+          "reason": "local",
+          "riders": 11,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 40.5,
+          "from": 0,
+          "reason": "local",
+          "riders": 13,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 47.7,
+          "from": 5,
+          "reason": "local",
+          "riders": 8,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 58.2,
+          "from": 4,
+          "reason": "local",
+          "riders": 10,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 73.2,
+          "from": 2,
+          "reason": "local",
+          "riders": 9,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 80.2,
+          "from": 3,
+          "reason": "local",
+          "riders": 5,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 100.0,
+          "from": 5,
+          "reason": "local",
+          "riders": 15,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 108.5,
+          "from": 0,
+          "reason": "local",
+          "riders": 7,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 123.3,
+          "from": 4,
+          "reason": "local",
+          "riders": 5,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 134.0,
+          "from": 3,
+          "reason": "local",
+          "riders": 6,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 148.5,
+          "from": 1,
+          "reason": "local",
+          "riders": 3,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 160.7,
+          "from": 2,
+          "reason": "local",
+          "riders": 10,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 174.9,
+          "from": 4,
+          "reason": "local",
+          "riders": 4,
+          "to": 3
+        }
+      ],
+      "delivered": 74,
+      "dispatch_income": 0,
+      "distance_m": 2235.0,
+      "dwell_fraction": 0.201666666666668,
+      "failed_contracts": 0,
+      "policy": "always_fill",
+      "rival_cash": [
+        1353,
+        1322,
+        1109
+      ],
+      "route": [
+        0,
+        5,
+        1,
+        0,
+        5,
+        4,
+        2,
+        3,
+        5,
+        0,
+        4,
+        3,
+        1,
+        2,
+        4
+      ],
+      "seed": 73,
+      "tips": 445,
+      "unique_stops": 6
+    },
+    {
+      "boarded": 49,
+      "boarding_modes": 2,
+      "cash": 1353,
+      "completion_ratio": 0.938775510204082,
+      "contracts": 0,
+      "decision_log": [
+        {
+          "action": "drive",
+          "at": 2.3,
+          "from": 0,
+          "reason": "local",
+          "riders": 8,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 11.3,
+          "from": 5,
+          "reason": "local",
+          "riders": 7,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 26.2,
+          "from": 1,
+          "reason": "local",
+          "riders": 2,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 36.1,
+          "from": 0,
+          "reason": "local",
+          "riders": 2,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 42.6,
+          "from": 5,
+          "reason": "local",
+          "riders": 1,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 48.7,
+          "from": 0,
+          "reason": "local",
+          "riders": 0,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 55.3,
+          "from": 5,
+          "reason": "local",
+          "riders": 3,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 62.0,
+          "from": 0,
+          "reason": "local",
+          "riders": 1,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 71.3,
+          "from": 1,
+          "reason": "local",
+          "riders": 0,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 85.9,
+          "from": 4,
+          "reason": "local",
+          "riders": 5,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 100.2,
+          "from": 2,
+          "reason": "local",
+          "riders": 1,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 111.1,
+          "from": 1,
+          "reason": "local",
+          "riders": 6,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 121.5,
+          "from": 0,
+          "reason": "local",
+          "riders": 1,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 134.9,
+          "from": 4,
+          "reason": "local",
+          "riders": 0,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 145.6,
+          "from": 5,
+          "reason": "local",
+          "riders": 6,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 156.1,
+          "from": 4,
+          "reason": "local",
+          "riders": 1,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 166.0,
+          "from": 5,
+          "reason": "local",
+          "riders": 2,
+          "to": 1
+        }
+      ],
+      "delivered": 46,
+      "dispatch_income": 0,
+      "distance_m": 2311.0,
+      "dwell_fraction": 0.140555555555556,
+      "failed_contracts": 0,
+      "policy": "express",
+      "rival_cash": [
+        996,
+        1318,
+        1952
+      ],
+      "route": [
+        0,
+        5,
+        1,
+        0,
+        5,
+        0,
+        5,
+        0,
+        1,
+        4,
+        2,
+        1,
+        0,
+        4,
+        5,
+        4,
+        5,
+        1
+      ],
+      "seed": 73,
+      "tips": 324,
+      "unique_stops": 5
+    },
+    {
+      "boarded": 38,
+      "boarding_modes": 2,
+      "cash": 1685,
+      "completion_ratio": 1.0,
+      "contracts": 4,
+      "decision_log": [
+        {
+          "action": "accept",
+          "at": 0.0,
+          "dest": 5,
+          "id": 1,
+          "pickup": 0
+        },
+        {
+          "action": "drive",
+          "at": 3.0,
+          "from": 0,
+          "reason": "dispatch_deliver",
+          "riders": 11,
+          "to": 5
+        },
+        {
+          "action": "accept",
+          "at": 10.8,
+          "dest": 2,
+          "id": 2,
+          "pickup": 5
+        },
+        {
+          "action": "drive",
+          "at": 10.8,
+          "from": 5,
+          "reason": "local",
+          "riders": 0,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 27.3,
+          "from": 2,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 44.5,
+          "from": 5,
+          "reason": "dispatch_deliver",
+          "riders": 3,
+          "to": 2
+        },
+        {
+          "action": "accept",
+          "at": 60.7,
+          "dest": 5,
+          "id": 5,
+          "pickup": 3
+        },
+        {
+          "action": "drive",
+          "at": 61.5,
+          "from": 2,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 68.6,
+          "from": 3,
+          "reason": "dispatch_deliver",
+          "riders": 5,
+          "to": 5
+        },
+        {
+          "action": "accept",
+          "at": 85.9,
+          "dest": 2,
+          "id": 7,
+          "pickup": 4
+        },
+        {
+          "action": "drive",
+          "at": 85.9,
+          "from": 5,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 97.1,
+          "from": 4,
+          "reason": "dispatch_deliver",
+          "riders": 8,
+          "to": 2
+        },
+        {
+          "action": "accept",
+          "at": 111.7,
+          "dest": 5,
+          "id": 9,
+          "pickup": 2
+        },
+        {
+          "action": "drive",
+          "at": 111.7,
+          "from": 2,
+          "reason": "local",
+          "riders": 0,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 120.9,
+          "from": 1,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 130.8,
+          "from": 2,
+          "reason": "dispatch_deliver",
+          "riders": 3,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 147.8,
+          "from": 5,
+          "reason": "local",
+          "riders": 0,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 154.9,
+          "from": 0,
+          "reason": "local",
+          "riders": 5,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 169.7,
+          "from": 4,
+          "reason": "local",
+          "riders": 3,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 179.4,
+          "from": 5,
+          "reason": "local",
+          "riders": 0,
+          "to": 0
+        }
+      ],
+      "delivered": 38,
+      "dispatch_income": 630,
+      "distance_m": 2548.0,
+      "dwell_fraction": 0.112222222222222,
+      "failed_contracts": 1,
+      "policy": "dispatch",
+      "rival_cash": [
+        1039,
+        2236,
+        1797
+      ],
+      "route": [
+        0,
+        5,
+        2,
+        5,
+        2,
+        3,
+        5,
+        4,
+        2,
+        1,
+        2,
+        5,
+        0,
+        4,
+        5
+      ],
+      "seed": 73,
+      "tips": 147,
+      "unique_stops": 6
+    },
+    {
+      "boarded": 61,
+      "boarding_modes": 1,
+      "cash": 1714,
+      "completion_ratio": 0.983606557377049,
+      "contracts": 0,
+      "decision_log": [
+        {
+          "action": "drive",
+          "at": 3.3,
+          "from": 0,
+          "reason": "local",
+          "riders": 12,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 13.6,
+          "from": 5,
+          "reason": "local",
+          "riders": 11,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 29.2,
+          "from": 1,
+          "reason": "local",
+          "riders": 7,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 39.1,
+          "from": 2,
+          "reason": "local",
+          "riders": 3,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 58.2,
+          "from": 0,
+          "reason": "local",
+          "riders": 10,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 64.8,
+          "from": 5,
+          "reason": "local",
+          "riders": 6,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 75.3,
+          "from": 4,
+          "reason": "local",
+          "riders": 6,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 89.2,
+          "from": 1,
+          "reason": "local",
+          "riders": 3,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 100.0,
+          "from": 2,
+          "reason": "local",
+          "riders": 6,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 106.5,
+          "from": 3,
+          "reason": "local",
+          "riders": 5,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 121.1,
+          "from": 1,
+          "reason": "local",
+          "riders": 4,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 130.9,
+          "from": 0,
+          "reason": "local",
+          "riders": 0,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 138.3,
+          "from": 5,
+          "reason": "local",
+          "riders": 6,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 148.7,
+          "from": 4,
+          "reason": "local",
+          "riders": 4,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 159.9,
+          "from": 3,
+          "reason": "local",
+          "riders": 7,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 166.5,
+          "from": 2,
+          "reason": "local",
+          "riders": 3,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 176.0,
+          "from": 1,
+          "reason": "local",
+          "riders": 1,
+          "to": 4
+        }
+      ],
+      "delivered": 60,
+      "dispatch_income": 0,
+      "distance_m": 2373.0,
+      "dwell_fraction": 0.170555555555556,
+      "failed_contracts": 0,
+      "policy": "always_fill",
+      "rival_cash": [
+        1371,
+        1618,
+        734
+      ],
+      "route": [
+        0,
+        5,
+        1,
+        2,
+        0,
+        5,
+        4,
+        1,
+        2,
+        3,
+        1,
+        0,
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "seed": 117,
+      "tips": 390,
+      "unique_stops": 6
+    },
+    {
+      "boarded": 46,
+      "boarding_modes": 2,
+      "cash": 1305,
+      "completion_ratio": 0.978260869565217,
+      "contracts": 0,
+      "decision_log": [
+        {
+          "action": "drive",
+          "at": 3.0,
+          "from": 0,
+          "reason": "local",
+          "riders": 11,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 12.5,
+          "from": 5,
+          "reason": "local",
+          "riders": 7,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 27.9,
+          "from": 1,
+          "reason": "local",
+          "riders": 4,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 37.8,
+          "from": 2,
+          "reason": "local",
+          "riders": 0,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 55.3,
+          "from": 5,
+          "reason": "local",
+          "riders": 4,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 62.6,
+          "from": 0,
+          "reason": "local",
+          "riders": 3,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 72.5,
+          "from": 1,
+          "reason": "local",
+          "riders": 1,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 86.1,
+          "from": 4,
+          "reason": "local",
+          "riders": 0,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 99.8,
+          "from": 0,
+          "reason": "local",
+          "riders": 2,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 113.6,
+          "from": 4,
+          "reason": "local",
+          "riders": 1,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 124.5,
+          "from": 3,
+          "reason": "local",
+          "riders": 6,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 139.5,
+          "from": 1,
+          "reason": "local",
+          "riders": 3,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 149.6,
+          "from": 0,
+          "reason": "local",
+          "riders": 2,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 163.4,
+          "from": 4,
+          "reason": "local",
+          "riders": 1,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 172.8,
+          "from": 3,
+          "reason": "local",
+          "riders": 0,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 178.9,
+          "from": 2,
+          "reason": "local",
+          "riders": 1,
+          "to": 3
+        }
+      ],
+      "delivered": 45,
+      "dispatch_income": 0,
+      "distance_m": 2443.0,
+      "dwell_fraction": 0.133333333333334,
+      "failed_contracts": 0,
+      "policy": "express",
+      "rival_cash": [
+        1579,
+        1380,
+        1262
+      ],
+      "route": [
+        0,
+        5,
+        1,
+        2,
+        5,
+        0,
+        1,
+        4,
+        0,
+        4,
+        3,
+        1,
+        0,
+        4,
+        3,
+        2
+      ],
+      "seed": 117,
+      "tips": 291,
+      "unique_stops": 6
+    },
+    {
+      "boarded": 28,
+      "boarding_modes": 1,
+      "cash": 1348,
+      "completion_ratio": 0.892857142857143,
+      "contracts": 4,
+      "decision_log": [
+        {
+          "action": "accept",
+          "at": 0.0,
+          "dest": 2,
+          "id": 1,
+          "pickup": 0
+        },
+        {
+          "action": "drive",
+          "at": 1.3,
+          "from": 0,
+          "reason": "dispatch_deliver",
+          "riders": 4,
+          "to": 2
+        },
+        {
+          "action": "accept",
+          "at": 18.5,
+          "dest": 5,
+          "id": 2,
+          "pickup": 1
+        },
+        {
+          "action": "drive",
+          "at": 18.5,
+          "from": 2,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 28.7,
+          "from": 1,
+          "reason": "dispatch_deliver",
+          "riders": 4,
+          "to": 5
+        },
+        {
+          "action": "accept",
+          "at": 42.6,
+          "dest": 0,
+          "id": 4,
+          "pickup": 4
+        },
+        {
+          "action": "drive",
+          "at": 42.6,
+          "from": 5,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 53.0,
+          "from": 4,
+          "reason": "dispatch_deliver",
+          "riders": 5,
+          "to": 0
+        },
+        {
+          "action": "accept",
+          "at": 67.0,
+          "dest": 2,
+          "id": 5,
+          "pickup": 0
+        },
+        {
+          "action": "drive",
+          "at": 67.0,
+          "from": 0,
+          "reason": "local",
+          "riders": 0,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 83.6,
+          "from": 3,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 101.2,
+          "from": 0,
+          "reason": "dispatch_deliver",
+          "riders": 4,
+          "to": 2
+        },
+        {
+          "action": "accept",
+          "at": 117.4,
+          "dest": 5,
+          "id": 10,
+          "pickup": 1
+        },
+        {
+          "action": "drive",
+          "at": 118.4,
+          "from": 2,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 128.6,
+          "from": 1,
+          "reason": "dispatch_deliver",
+          "riders": 4,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 142.5,
+          "from": 5,
+          "reason": "local",
+          "riders": 0,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 149.1,
+          "from": 0,
+          "reason": "local",
+          "riders": 3,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 163.1,
+          "from": 4,
+          "reason": "local",
+          "riders": 1,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 177.4,
+          "from": 1,
+          "reason": "local",
+          "riders": 3,
+          "to": 2
+        }
+      ],
+      "delivered": 25,
+      "dispatch_income": 657,
+      "distance_m": 2683.0,
+      "dwell_fraction": 0.0855555555555553,
+      "failed_contracts": 1,
+      "policy": "dispatch",
+      "rival_cash": [
+        1923,
+        1578,
+        1922
+      ],
+      "route": [
+        0,
+        2,
+        1,
+        5,
+        4,
+        0,
+        3,
+        0,
+        2,
+        1,
+        5,
+        0,
+        4,
+        1
+      ],
+      "seed": 117,
+      "tips": 50,
+      "unique_stops": 6
+    },
+    {
+      "boarded": 74,
+      "boarding_modes": 1,
+      "cash": 2040,
+      "completion_ratio": 0.972972972972973,
+      "contracts": 0,
+      "decision_log": [
+        {
+          "action": "drive",
+          "at": 3.8,
+          "from": 0,
+          "reason": "local",
+          "riders": 14,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 15.1,
+          "from": 5,
+          "reason": "local",
+          "riders": 17,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 31.3,
+          "from": 1,
+          "reason": "local",
+          "riders": 9,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 41.2,
+          "from": 2,
+          "reason": "local",
+          "riders": 5,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 55.4,
+          "from": 4,
+          "reason": "local",
+          "riders": 4,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 72.2,
+          "from": 0,
+          "reason": "local",
+          "riders": 15,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 79.4,
+          "from": 5,
+          "reason": "local",
+          "riders": 10,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 95.0,
+          "from": 1,
+          "reason": "local",
+          "riders": 8,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 109.1,
+          "from": 3,
+          "reason": "local",
+          "riders": 5,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 116.6,
+          "from": 2,
+          "reason": "local",
+          "riders": 8,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 127.1,
+          "from": 1,
+          "reason": "local",
+          "riders": 5,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 140.6,
+          "from": 5,
+          "reason": "local",
+          "riders": 3,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 148.7,
+          "from": 0,
+          "reason": "local",
+          "riders": 10,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 155.6,
+          "from": 5,
+          "reason": "local",
+          "riders": 9,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 166.7,
+          "from": 4,
+          "reason": "local",
+          "riders": 5,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 176.4,
+          "from": 5,
+          "reason": "local",
+          "riders": 2,
+          "to": 1
+        }
+      ],
+      "delivered": 72,
+      "dispatch_income": 0,
+      "distance_m": 2321.0,
+      "dwell_fraction": 0.196666666666668,
+      "failed_contracts": 0,
+      "policy": "always_fill",
+      "rival_cash": [
+        1245,
+        1875,
+        721
+      ],
+      "route": [
+        0,
+        5,
+        1,
+        2,
+        4,
+        0,
+        5,
+        1,
+        3,
+        2,
+        1,
+        5,
+        0,
+        5,
+        4,
+        5
+      ],
+      "seed": 334,
+      "tips": 425,
+      "unique_stops": 6
+    },
+    {
+      "boarded": 47,
+      "boarding_modes": 2,
+      "cash": 1326,
+      "completion_ratio": 1.0,
+      "contracts": 0,
+      "decision_log": [
+        {
+          "action": "drive",
+          "at": 3.0,
+          "from": 0,
+          "reason": "local",
+          "riders": 11,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 13.3,
+          "from": 5,
+          "reason": "local",
+          "riders": 10,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 29.2,
+          "from": 1,
+          "reason": "local",
+          "riders": 4,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 39.1,
+          "from": 2,
+          "reason": "local",
+          "riders": 0,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 56.6,
+          "from": 0,
+          "reason": "local",
+          "riders": 4,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 63.7,
+          "from": 5,
+          "reason": "local",
+          "riders": 2,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 71.4,
+          "from": 0,
+          "reason": "local",
+          "riders": 6,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 82.0,
+          "from": 1,
+          "reason": "local",
+          "riders": 2,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 95.5,
+          "from": 3,
+          "reason": "local",
+          "riders": 0,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 109.2,
+          "from": 1,
+          "reason": "local",
+          "riders": 2,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 123.2,
+          "from": 3,
+          "reason": "local",
+          "riders": 2,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 136.7,
+          "from": 1,
+          "reason": "local",
+          "riders": 0,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 146.3,
+          "from": 0,
+          "reason": "local",
+          "riders": 2,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 152.8,
+          "from": 5,
+          "reason": "local",
+          "riders": 1,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 162.4,
+          "from": 4,
+          "reason": "local",
+          "riders": 1,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 171.8,
+          "from": 5,
+          "reason": "local",
+          "riders": 0,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 177.7,
+          "from": 0,
+          "reason": "local",
+          "riders": 0,
+          "to": 2
+        }
+      ],
+      "delivered": 47,
+      "dispatch_income": 0,
+      "distance_m": 2569.0,
+      "dwell_fraction": 0.137222222222223,
+      "failed_contracts": 0,
+      "policy": "express",
+      "rival_cash": [
+        1237,
+        1753,
+        1281
+      ],
+      "route": [
+        0,
+        5,
+        1,
+        2,
+        0,
+        5,
+        0,
+        1,
+        3,
+        1,
+        3,
+        1,
+        0,
+        5,
+        4,
+        5,
+        0
+      ],
+      "seed": 334,
+      "tips": 282,
+      "unique_stops": 6
+    },
+    {
+      "boarded": 28,
+      "boarding_modes": 1,
+      "cash": 1564,
+      "completion_ratio": 0.928571428571429,
+      "contracts": 5,
+      "decision_log": [
+        {
+          "action": "accept",
+          "at": 0.0,
+          "dest": 3,
+          "id": 1,
+          "pickup": 0
+        },
+        {
+          "action": "drive",
+          "at": 1.3,
+          "from": 0,
+          "reason": "dispatch_deliver",
+          "riders": 4,
+          "to": 3
+        },
+        {
+          "action": "accept",
+          "at": 18.6,
+          "dest": 5,
+          "id": 3,
+          "pickup": 2
+        },
+        {
+          "action": "drive",
+          "at": 18.6,
+          "from": 3,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 25.5,
+          "from": 2,
+          "reason": "dispatch_deliver",
+          "riders": 4,
+          "to": 5
+        },
+        {
+          "action": "accept",
+          "at": 42.7,
+          "dest": 4,
+          "id": 5,
+          "pickup": 1
+        },
+        {
+          "action": "drive",
+          "at": 42.7,
+          "from": 5,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 56.6,
+          "from": 1,
+          "reason": "dispatch_deliver",
+          "riders": 3,
+          "to": 4
+        },
+        {
+          "action": "accept",
+          "at": 70.5,
+          "dest": 1,
+          "id": 6,
+          "pickup": 4
+        },
+        {
+          "action": "drive",
+          "at": 70.5,
+          "from": 4,
+          "reason": "local",
+          "riders": 0,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 79.7,
+          "from": 3,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 89.9,
+          "from": 4,
+          "reason": "dispatch_deliver",
+          "riders": 4,
+          "to": 1
+        },
+        {
+          "action": "accept",
+          "at": 104.0,
+          "dest": 5,
+          "id": 9,
+          "pickup": 3
+        },
+        {
+          "action": "drive",
+          "at": 104.0,
+          "from": 1,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 118.2,
+          "from": 3,
+          "reason": "dispatch_deliver",
+          "riders": 4,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 135.4,
+          "from": 5,
+          "reason": "local",
+          "riders": 0,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 142.5,
+          "from": 0,
+          "reason": "local",
+          "riders": 5,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 156.8,
+          "from": 4,
+          "reason": "local",
+          "riders": 1,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 166.4,
+          "from": 5,
+          "reason": "local",
+          "riders": 1,
+          "to": 1
+        }
+      ],
+      "delivered": 26,
+      "dispatch_income": 817,
+      "distance_m": 2567.0,
+      "dwell_fraction": 0.0866666666666664,
+      "failed_contracts": 0,
+      "policy": "dispatch",
+      "rival_cash": [
+        1773,
+        1693,
+        2086
+      ],
+      "route": [
+        0,
+        3,
+        2,
+        5,
+        1,
+        4,
+        3,
+        4,
+        1,
+        3,
+        5,
+        0,
+        4,
+        5,
+        1
+      ],
+      "seed": 334,
+      "tips": 76,
+      "unique_stops": 6
+    },
+    {
+      "boarded": 106,
+      "boarding_modes": 1,
+      "cash": 2518,
+      "completion_ratio": 0.839622641509434,
+      "contracts": 0,
+      "decision_log": [
+        {
+          "action": "drive",
+          "at": 3.3,
+          "from": 0,
+          "reason": "local",
+          "riders": 12,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 13.7,
+          "from": 5,
+          "reason": "local",
+          "riders": 15,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 29.3,
+          "from": 1,
+          "reason": "local",
+          "riders": 13,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 40.5,
+          "from": 2,
+          "reason": "local",
+          "riders": 11,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 55.6,
+          "from": 4,
+          "reason": "local",
+          "riders": 7,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 67.1,
+          "from": 3,
+          "reason": "local",
+          "riders": 13,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 76.2,
+          "from": 2,
+          "reason": "local",
+          "riders": 19,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 83.3,
+          "from": 3,
+          "reason": "local",
+          "riders": 12,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 94.5,
+          "from": 4,
+          "reason": "local",
+          "riders": 10,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 105.3,
+          "from": 5,
+          "reason": "local",
+          "riders": 13,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 113.4,
+          "from": 0,
+          "reason": "local",
+          "riders": 15,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 124.9,
+          "from": 1,
+          "reason": "local",
+          "riders": 13,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 136.1,
+          "from": 2,
+          "reason": "local",
+          "riders": 16,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 146.1,
+          "from": 1,
+          "reason": "local",
+          "riders": 11,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 157.5,
+          "from": 0,
+          "reason": "local",
+          "riders": 15,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 166.9,
+          "from": 5,
+          "reason": "local",
+          "riders": 19,
+          "to": 4
+        }
+      ],
+      "delivered": 89,
+      "dispatch_income": 0,
+      "distance_m": 1957.0,
+      "dwell_fraction": 0.257222222222224,
+      "failed_contracts": 0,
+      "policy": "always_fill",
+      "rival_cash": [
+        1334,
+        1051,
+        654
+      ],
+      "route": [
+        0,
+        5,
+        1,
+        2,
+        4,
+        3,
+        2,
+        3,
+        4,
+        5,
+        0,
+        1,
+        2,
+        1,
+        0,
+        5,
+        4
+      ],
+      "seed": 789,
+      "tips": 509,
+      "unique_stops": 6
+    },
+    {
+      "boarded": 44,
+      "boarding_modes": 2,
+      "cash": 1249,
+      "completion_ratio": 1.0,
+      "contracts": 0,
+      "decision_log": [
+        {
+          "action": "drive",
+          "at": 2.5,
+          "from": 0,
+          "reason": "local",
+          "riders": 9,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 11.7,
+          "from": 5,
+          "reason": "local",
+          "riders": 7,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 27.3,
+          "from": 1,
+          "reason": "local",
+          "riders": 5,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 38.1,
+          "from": 2,
+          "reason": "local",
+          "riders": 3,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 51.8,
+          "from": 4,
+          "reason": "local",
+          "riders": 0,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 65.0,
+          "from": 2,
+          "reason": "local",
+          "riders": 0,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 71.4,
+          "from": 3,
+          "reason": "local",
+          "riders": 2,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 81.9,
+          "from": 4,
+          "reason": "local",
+          "riders": 4,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 96.0,
+          "from": 2,
+          "reason": "local",
+          "riders": 1,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 114.2,
+          "from": 0,
+          "reason": "local",
+          "riders": 6,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 124.6,
+          "from": 1,
+          "reason": "local",
+          "riders": 1,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 134.1,
+          "from": 0,
+          "reason": "local",
+          "riders": 1,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 140.7,
+          "from": 5,
+          "reason": "local",
+          "riders": 2,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 150.2,
+          "from": 4,
+          "reason": "local",
+          "riders": 0,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 159.4,
+          "from": 3,
+          "reason": "local",
+          "riders": 0,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 166.0,
+          "from": 2,
+          "reason": "local",
+          "riders": 3,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 175.7,
+          "from": 1,
+          "reason": "local",
+          "riders": 0,
+          "to": 0
+        }
+      ],
+      "delivered": 44,
+      "dispatch_income": 0,
+      "distance_m": 2422.0,
+      "dwell_fraction": 0.13,
+      "failed_contracts": 0,
+      "policy": "express",
+      "rival_cash": [
+        1021,
+        1344,
+        1697
+      ],
+      "route": [
+        0,
+        5,
+        1,
+        2,
+        4,
+        2,
+        3,
+        4,
+        2,
+        0,
+        1,
+        0,
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "seed": 789,
+      "tips": 254,
+      "unique_stops": 6
+    },
+    {
+      "boarded": 42,
+      "boarding_modes": 2,
+      "cash": 1880,
+      "completion_ratio": 0.952380952380952,
+      "contracts": 5,
+      "decision_log": [
+        {
+          "action": "accept",
+          "at": 0.0,
+          "dest": 5,
+          "id": 1,
+          "pickup": 0
+        },
+        {
+          "action": "drive",
+          "at": 3.8,
+          "from": 0,
+          "reason": "dispatch_deliver",
+          "riders": 14,
+          "to": 5
+        },
+        {
+          "action": "accept",
+          "at": 12.1,
+          "dest": 3,
+          "id": 2,
+          "pickup": 1
+        },
+        {
+          "action": "drive",
+          "at": 12.1,
+          "from": 5,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 26.5,
+          "from": 1,
+          "reason": "dispatch_deliver",
+          "riders": 5,
+          "to": 3
+        },
+        {
+          "action": "accept",
+          "at": 40.5,
+          "dest": 4,
+          "id": 4,
+          "pickup": 1
+        },
+        {
+          "action": "drive",
+          "at": 40.5,
+          "from": 3,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 54.7,
+          "from": 1,
+          "reason": "dispatch_deliver",
+          "riders": 4,
+          "to": 4
+        },
+        {
+          "action": "accept",
+          "at": 68.8,
+          "dest": 2,
+          "id": 5,
+          "pickup": 5
+        },
+        {
+          "action": "drive",
+          "at": 68.8,
+          "from": 4,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 79.0,
+          "from": 5,
+          "reason": "dispatch_deliver",
+          "riders": 4,
+          "to": 2
+        },
+        {
+          "action": "accept",
+          "at": 96.2,
+          "dest": 5,
+          "id": 7,
+          "pickup": 2
+        },
+        {
+          "action": "drive",
+          "at": 96.2,
+          "from": 2,
+          "reason": "local",
+          "riders": 0,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 102.1,
+          "from": 3,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 109.0,
+          "from": 2,
+          "reason": "dispatch_deliver",
+          "riders": 4,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 126.2,
+          "from": 5,
+          "reason": "local",
+          "riders": 0,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 143.7,
+          "from": 2,
+          "reason": "local",
+          "riders": 4,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 154.8,
+          "from": 1,
+          "reason": "local",
+          "riders": 5,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 164.8,
+          "from": 2,
+          "reason": "local",
+          "riders": 0,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 178.5,
+          "from": 4,
+          "reason": "local",
+          "riders": 2,
+          "to": 5
+        }
+      ],
+      "delivered": 40,
+      "dispatch_income": 801,
+      "distance_m": 2561.0,
+      "dwell_fraction": 0.120555555555556,
+      "failed_contracts": 0,
+      "policy": "dispatch",
+      "rival_cash": [
+        1417,
+        1723,
+        1809
+      ],
+      "route": [
+        0,
+        5,
+        1,
+        3,
+        1,
+        4,
+        5,
+        2,
+        3,
+        2,
+        5,
+        2,
+        1,
+        2,
+        4
+      ],
+      "seed": 789,
+      "tips": 160,
+      "unique_stops": 6
+    },
+    {
+      "boarded": 68,
+      "boarding_modes": 1,
+      "cash": 1793,
+      "completion_ratio": 0.941176470588235,
+      "contracts": 0,
+      "decision_log": [
+        {
+          "action": "drive",
+          "at": 3.5,
+          "from": 0,
+          "reason": "local",
+          "riders": 13,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 14.6,
+          "from": 5,
+          "reason": "local",
+          "riders": 17,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 30.2,
+          "from": 1,
+          "reason": "local",
+          "riders": 8,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 40.4,
+          "from": 2,
+          "reason": "local",
+          "riders": 7,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 54.9,
+          "from": 4,
+          "reason": "local",
+          "riders": 4,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 64.3,
+          "from": 3,
+          "reason": "local",
+          "riders": 3,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 71.6,
+          "from": 2,
+          "reason": "local",
+          "riders": 7,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 79.3,
+          "from": 3,
+          "reason": "local",
+          "riders": 6,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 89.3,
+          "from": 4,
+          "reason": "local",
+          "riders": 4,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 103.1,
+          "from": 0,
+          "reason": "local",
+          "riders": 3,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 112.6,
+          "from": 1,
+          "reason": "local",
+          "riders": 3,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 122.6,
+          "from": 2,
+          "reason": "local",
+          "riders": 3,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 132.6,
+          "from": 1,
+          "reason": "local",
+          "riders": 3,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 143.5,
+          "from": 0,
+          "reason": "local",
+          "riders": 7,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 152.4,
+          "from": 5,
+          "reason": "local",
+          "riders": 14,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 163.1,
+          "from": 4,
+          "reason": "local",
+          "riders": 10,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 177.9,
+          "from": 1,
+          "reason": "local",
+          "riders": 4,
+          "to": 2
+        }
+      ],
+      "delivered": 64,
+      "dispatch_income": 0,
+      "distance_m": 2297.0,
+      "dwell_fraction": 0.181666666666668,
+      "failed_contracts": 0,
+      "policy": "always_fill",
+      "rival_cash": [
+        1304,
+        1505,
+        910
+      ],
+      "route": [
+        0,
+        5,
+        1,
+        2,
+        4,
+        3,
+        2,
+        3,
+        4,
+        0,
+        1,
+        2,
+        1,
+        0,
+        5,
+        4,
+        1
+      ],
+      "seed": 20261114,
+      "tips": 336,
+      "unique_stops": 6
+    },
+    {
+      "boarded": 60,
+      "boarding_modes": 2,
+      "cash": 1648,
+      "completion_ratio": 0.983333333333333,
+      "contracts": 0,
+      "decision_log": [
+        {
+          "action": "drive",
+          "at": 2.8,
+          "from": 0,
+          "reason": "local",
+          "riders": 10,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 13.1,
+          "from": 5,
+          "reason": "local",
+          "riders": 11,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 28.7,
+          "from": 1,
+          "reason": "local",
+          "riders": 2,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 38.5,
+          "from": 2,
+          "reason": "local",
+          "riders": 1,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 45.4,
+          "from": 3,
+          "reason": "local",
+          "riders": 5,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 52.2,
+          "from": 2,
+          "reason": "local",
+          "riders": 2,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 67.0,
+          "from": 4,
+          "reason": "local",
+          "riders": 5,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 82.8,
+          "from": 2,
+          "reason": "local",
+          "riders": 7,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 90.9,
+          "from": 3,
+          "reason": "local",
+          "riders": 4,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 100.8,
+          "from": 4,
+          "reason": "local",
+          "riders": 0,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 115.2,
+          "from": 2,
+          "reason": "local",
+          "riders": 5,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 125.5,
+          "from": 1,
+          "reason": "local",
+          "riders": 1,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 135.3,
+          "from": 0,
+          "reason": "local",
+          "riders": 2,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 142.8,
+          "from": 5,
+          "reason": "local",
+          "riders": 5,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 152.8,
+          "from": 4,
+          "reason": "local",
+          "riders": 0,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 162.2,
+          "from": 5,
+          "reason": "local",
+          "riders": 1,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 179.1,
+          "from": 2,
+          "reason": "local",
+          "riders": 1,
+          "to": 5
+        }
+      ],
+      "delivered": 59,
+      "dispatch_income": 0,
+      "distance_m": 2497.0,
+      "dwell_fraction": 0.166666666666668,
+      "failed_contracts": 0,
+      "policy": "express",
+      "rival_cash": [
+        1187,
+        1654,
+        963
+      ],
+      "route": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        2,
+        4,
+        2,
+        3,
+        4,
+        2,
+        1,
+        0,
+        5,
+        4,
+        5,
+        2
+      ],
+      "seed": 20261114,
+      "tips": 337,
+      "unique_stops": 6
+    },
+    {
+      "boarded": 46,
+      "boarding_modes": 1,
+      "cash": 2128,
+      "completion_ratio": 0.934782608695652,
+      "contracts": 6,
+      "decision_log": [
+        {
+          "action": "accept",
+          "at": 0.0,
+          "dest": 5,
+          "id": 1,
+          "pickup": 0
+        },
+        {
+          "action": "drive",
+          "at": 3.8,
+          "from": 0,
+          "reason": "dispatch_deliver",
+          "riders": 14,
+          "to": 5
+        },
+        {
+          "action": "accept",
+          "at": 12.1,
+          "dest": 3,
+          "id": 3,
+          "pickup": 5
+        },
+        {
+          "action": "drive",
+          "at": 12.1,
+          "from": 5,
+          "reason": "local",
+          "riders": 0,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 18.0,
+          "from": 0,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 5
+        },
+        {
+          "action": "drive",
+          "at": 24.6,
+          "from": 5,
+          "reason": "dispatch_deliver",
+          "riders": 3,
+          "to": 3
+        },
+        {
+          "action": "accept",
+          "at": 41.6,
+          "dest": 5,
+          "id": 4,
+          "pickup": 2
+        },
+        {
+          "action": "drive",
+          "at": 41.6,
+          "from": 3,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 2
+        },
+        {
+          "action": "drive",
+          "at": 48.2,
+          "from": 2,
+          "reason": "dispatch_deliver",
+          "riders": 3,
+          "to": 5
+        },
+        {
+          "action": "accept",
+          "at": 65.2,
+          "dest": 2,
+          "id": 5,
+          "pickup": 0
+        },
+        {
+          "action": "drive",
+          "at": 65.2,
+          "from": 5,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 0
+        },
+        {
+          "action": "drive",
+          "at": 72.1,
+          "from": 0,
+          "reason": "dispatch_deliver",
+          "riders": 4,
+          "to": 2
+        },
+        {
+          "action": "accept",
+          "at": 89.3,
+          "dest": 5,
+          "id": 8,
+          "pickup": 1
+        },
+        {
+          "action": "drive",
+          "at": 89.3,
+          "from": 2,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 99.2,
+          "from": 1,
+          "reason": "dispatch_deliver",
+          "riders": 3,
+          "to": 5
+        },
+        {
+          "action": "accept",
+          "at": 112.9,
+          "dest": 3,
+          "id": 9,
+          "pickup": 1
+        },
+        {
+          "action": "drive",
+          "at": 112.9,
+          "from": 5,
+          "reason": "dispatch_collect",
+          "riders": 0,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 127.3,
+          "from": 1,
+          "reason": "dispatch_deliver",
+          "riders": 5,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 141.3,
+          "from": 3,
+          "reason": "local",
+          "riders": 0,
+          "to": 4
+        },
+        {
+          "action": "drive",
+          "at": 152.0,
+          "from": 4,
+          "reason": "local",
+          "riders": 6,
+          "to": 3
+        },
+        {
+          "action": "drive",
+          "at": 163.5,
+          "from": 3,
+          "reason": "local",
+          "riders": 5,
+          "to": 1
+        },
+        {
+          "action": "drive",
+          "at": 178.3,
+          "from": 1,
+          "reason": "local",
+          "riders": 3,
+          "to": 2
+        }
+      ],
+      "delivered": 43,
+      "dispatch_income": 934,
+      "distance_m": 2499.0,
+      "dwell_fraction": 0.13,
+      "failed_contracts": 0,
+      "policy": "dispatch",
+      "rival_cash": [
+        1513,
+        1520,
+        1663
+      ],
+      "route": [
+        0,
+        5,
+        0,
+        5,
+        3,
+        2,
+        5,
+        0,
+        2,
+        1,
+        5,
+        1,
+        3,
+        4,
+        3,
+        1
+      ],
+      "seed": 20261114,
+      "tips": 187,
+      "unique_stops": 6
+    }
+  ],
+  "seeds": [
+    41,
+    73,
+    117,
+    334,
+    789,
+    20261114
+  ],
+  "stop_count": 6
+}

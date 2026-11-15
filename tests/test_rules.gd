@@ -14,9 +14,9 @@ func _initialize():
 	var race := BusRace.new()
 	race.begin(19,12345)
 	check(race.remaining==180,"default race duration is three minutes")
-	for i in 6:
+	for i in D.STOP_POS.size():
 		for person in race.queues[i]:
-			check(person.dest!=i and person.dest>=0 and person.dest<6,"valid random destination")
+			check(person.dest!=i and person.dest>=0 and person.dest<D.STOP_POS.size(),"valid random destination")
 	# Put a known manifest in a stop and prove capacity and alighting ordering.
 	race.queues[0].clear()
 	for i in 24: race.queues[0].append({"id":1000+i,"dest":1,"fare":23,"origin":0})
@@ -59,15 +59,43 @@ func _initialize():
 	check(race.last_bonus==0,"no idle zero-fare bonus farming")
 	race.begin(27,3)
 	check(race.drivers[0].capacity==27,"upgraded capacity used")
-	# Every pair of stops is connected by orthogonal streets.
-	for a in 6:
-		for b in 6:
+	# Every stop pair follows the actual OSM road graph, including sloped and
+	# diagonal streets. Each leg must lie wholly on one recorded road segment;
+	# checking endpoints alone would allow cutting across a city block.
+	# Stops are lane/bay targets, not centerline nodes: only the first/last
+	# leg may connect to its exact nearest-road projection, within eight metres.
+	var diagonal_edges := 0
+	for edge in D.road_segments():
+		if absf(edge.a.x-edge.b.x)>1 and absf(edge.a.z-edge.b.z)>1: diagonal_edges+=1
+	check(diagonal_edges>0,"district includes non-orthogonal streets")
+	check(not leg_on_road(Vector3(10000,0,10000),Vector3(10100,0,10100)),"road continuity check rejects an off-map shortcut")
+	for a in D.STOP_POS.size():
+		for b in D.STOP_POS.size():
 			if a==b: continue
 			var path := D.route(D.STOP_POS[a],D.STOP_POS[b])
-			check(not path.is_empty() and path.back()==D.STOP_POS[b],"all stops connected")
+			check(not path.is_empty() and path.back().distance_to(D.STOP_POS[b])<=.4,"all stop routes reach destination %d to %d"%[a,b])
 			var previous: Vector3 = D.STOP_POS[a]
+			var total := 0.0
 			for point in path:
-				check(is_equal_approx(previous.x,point.x) or is_equal_approx(previous.z,point.z),"routes stay on orthogonal roads")
-				previous = point
+				var bay_connector := false
+				if previous==D.STOP_POS[a]:
+					bay_connector=point.distance_to(D.nearest_road(previous))<=.4 and previous.distance_to(point)<=8.0
+				if point==D.STOP_POS[b]:
+					bay_connector=bay_connector or (previous.distance_to(D.nearest_road(point))<=.4 and previous.distance_to(point)<=8.0)
+				check(bay_connector or leg_on_road(previous,point),"route %d to %d follows roads or its short bay connector"%[a,b])
+				total+=previous.distance_to(point)
+				previous=point
+			check(total+0.01>=D.STOP_POS[a].distance_to(D.STOP_POS[b]),"route distance cannot be shorter than direct distance")
+			check(is_equal_approx(total,D.road_distance(D.STOP_POS[a],D.STOP_POS[b])),"fare routing distance matches actual path")
 	print("RULE_TESTS: %d checks, %d failures"%[checks,failures])
 	quit(1 if failures else 0)
+
+func point_on_segment(point: Vector3, a: Vector3, b: Vector3) -> bool:
+	var delta := b-a
+	var t := clampf((point-a).dot(delta)/maxf(delta.length_squared(),.0001),0,1)
+	return point.distance_to(a+delta*t)<=.4
+
+func leg_on_road(a: Vector3, b: Vector3) -> bool:
+	for edge in D.road_segments():
+		if point_on_segment(a,edge.a,edge.b) and point_on_segment(b,edge.a,edge.b): return true
+	return false

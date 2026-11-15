@@ -1,0 +1,6366 @@
+{
+  "bumps": 43,
+  "decisions": [
+    {
+      "express": -1,
+      "kind": "route",
+      "name": "Western Market",
+      "t": 0.0,
+      "target": 0,
+      "waypoints": 9
+    },
+    {
+      "express": -1,
+      "kind": "route",
+      "name": "Bonham Strand",
+      "t": 9.48,
+      "target": 4,
+      "waypoints": 23
+    },
+    {
+      "express": -1,
+      "kind": "route",
+      "name": "Hollywood Road Park",
+      "t": 28.57,
+      "target": 5,
+      "waypoints": 26
+    },
+    {
+      "express": -1,
+      "kind": "route",
+      "name": "Man Mo Temple",
+      "t": 45.35,
+      "target": 7,
+      "waypoints": 41
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.92,
+        28.48,
+        32.27
+      ],
+      "t": 53.6999999999982,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.91,
+        28.48,
+        32.28
+      ],
+      "t": 59.1666666666646,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.73,
+        28.53,
+        32.69
+      ],
+      "t": 64.1666666666643,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.76,
+        28.53,
+        32.65
+      ],
+      "t": 69.5499999999973,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.59,
+        28.58,
+        33.18
+      ],
+      "t": 74.8333333333304,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.61,
+        28.57,
+        33.12
+      ],
+      "t": 80.2333333333301,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.61,
+        28.58,
+        33.14
+      ],
+      "t": 85.7166666666631,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.63,
+        28.57,
+        33.09
+      ],
+      "t": 91.1166666666628,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.57,
+        28.58,
+        33.19
+      ],
+      "t": 95.5666666666625,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -264.65,
+        28.76,
+        34.74
+      ],
+      "t": 100.666666666662,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -264.79,
+        28.74,
+        34.56
+      ],
+      "t": 106.249999999995,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.82,
+        28.58,
+        33.2
+      ],
+      "t": 112.099999999995,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.56,
+        28.59,
+        33.26
+      ],
+      "t": 117.549999999995,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.57,
+        28.59,
+        33.24
+      ],
+      "t": 122.916666666661,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.6,
+        28.58,
+        33.15
+      ],
+      "t": 128.366666666661,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.74,
+        28.53,
+        32.73
+      ],
+      "t": 133.116666666665,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.69,
+        28.55,
+        32.87
+      ],
+      "t": 138.466666666669,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.71,
+        28.55,
+        32.84
+      ],
+      "t": 143.916666666673,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.61,
+        28.57,
+        33.09
+      ],
+      "t": 149.233333333344,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.62,
+        28.57,
+        33.08
+      ],
+      "t": 154.600000000015,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.59,
+        28.58,
+        33.18
+      ],
+      "t": 160.016666666686,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.61,
+        28.58,
+        33.14
+      ],
+      "t": 165.46666666669,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.63,
+        28.57,
+        33.07
+      ],
+      "t": 170.933333333362,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "kind": "reverse_recovery",
+      "position": [
+        -265.65,
+        28.56,
+        33.01
+      ],
+      "t": 176.350000000032,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    }
+  ],
+  "delivered": 18,
+  "discontinuities": [],
+  "distance_m": 758.156216500181,
+  "dwell_fraction": 0.0618518518518404,
+  "dwell_seconds": 11.1333333333335,
+  "impacts": [
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -264.0,
+            28.36,
+            30.48
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -264.0,
+            28.36,
+            30.48
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.95,
+            0.0,
+            0.31
+          ],
+          "point": [
+            -263.44,
+            30.95,
+            30.05
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -264.0,
+            28.36,
+            30.48
+          ]
+        }
+      ],
+      "position": [
+        -265.92,
+        28.49,
+        32.27
+      ],
+      "severity": 19.04,
+      "t": 51.17,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.91,
+            28.61,
+            32.75
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.91,
+            28.61,
+            32.75
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.95,
+            0.0,
+            0.31
+          ],
+          "point": [
+            -263.45,
+            30.96,
+            30.04
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.77,
+            28.61,
+            32.69
+          ]
+        }
+      ],
+      "position": [
+        -265.95,
+        28.55,
+        32.29
+      ],
+      "severity": 12.94,
+      "t": 56.63,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.95,
+            0.0,
+            0.31
+          ],
+          "point": [
+            -263.45,
+            30.95,
+            30.04
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -264.0,
+            28.62,
+            33.04
+          ]
+        }
+      ],
+      "position": [
+        -265.91,
+        28.48,
+        32.28
+      ],
+      "severity": 3.3,
+      "t": 57.5,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.95,
+            0.0,
+            0.31
+          ],
+          "point": [
+            -263.45,
+            30.95,
+            30.04
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -264.0,
+            28.62,
+            33.04
+          ]
+        }
+      ],
+      "position": [
+        -265.91,
+        28.48,
+        32.28
+      ],
+      "severity": 4.22,
+      "t": 58.4,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            0.23,
+            0.0,
+            0.97
+          ],
+          "point": [
+            -271.8,
+            30.55,
+            27.32
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.4,
+            28.46,
+            32.36
+          ]
+        }
+      ],
+      "position": [
+        -271.14,
+        28.26,
+        30.71
+      ],
+      "severity": 6.47,
+      "t": 60.47,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.19,
+            28.71,
+            34.79
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.18,
+            28.71,
+            34.79
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.95,
+            0.0,
+            0.31
+          ],
+          "point": [
+            -262.78,
+            28.66,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.12,
+            28.71,
+            34.78
+          ]
+        }
+      ],
+      "position": [
+        -265.7,
+        28.58,
+        32.68
+      ],
+      "severity": 12.6,
+      "t": 61.63,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.77,
+            28.63,
+            32.87
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.77,
+            28.63,
+            32.86
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.93,
+            0.0,
+            0.36
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.62,
+            28.62,
+            32.79
+          ]
+        }
+      ],
+      "position": [
+        -265.82,
+        28.59,
+        32.68
+      ],
+      "severity": 13.2,
+      "t": 67.02,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.94,
+            0.01,
+            0.33
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -264.0,
+            28.39,
+            30.71
+          ]
+        }
+      ],
+      "position": [
+        -265.76,
+        28.52,
+        32.65
+      ],
+      "severity": 3.67,
+      "t": 68.22,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            0.23,
+            0.0,
+            0.97
+          ],
+          "point": [
+            -272.21,
+            30.53,
+            27.42
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -269.35,
+            28.48,
+            32.82
+          ]
+        }
+      ],
+      "position": [
+        -271.87,
+        28.25,
+        30.87
+      ],
+      "severity": 4.17,
+      "t": 70.98,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.77,
+            28.53,
+            33.18
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.77,
+            28.53,
+            33.18
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.92,
+            0.0,
+            0.39
+          ],
+          "point": [
+            -262.78,
+            31.27,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.75,
+            28.53,
+            33.17
+          ]
+        }
+      ],
+      "position": [
+        -265.55,
+        28.63,
+        33.16
+      ],
+      "severity": 12.72,
+      "t": 72.3,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.92,
+            0.0,
+            0.4
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -264.0,
+            28.43,
+            31.13
+          ]
+        }
+      ],
+      "position": [
+        -265.59,
+        28.58,
+        33.18
+      ],
+      "severity": 3.48,
+      "t": 73.8,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.63,
+            28.65,
+            33.09
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.62,
+            28.65,
+            33.09
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.9,
+            0.0,
+            0.44
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.47,
+            28.65,
+            32.99
+          ]
+        }
+      ],
+      "position": [
+        -265.67,
+        28.64,
+        33.16
+      ],
+      "severity": 12.8,
+      "t": 77.7,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.92,
+            0.0,
+            0.39
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -263.39,
+            28.41,
+            30.82
+          ]
+        }
+      ],
+      "position": [
+        -265.62,
+        28.58,
+        33.12
+      ],
+      "severity": 3.67,
+      "t": 78.68,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.92,
+            0.0,
+            0.39
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        }
+      ],
+      "position": [
+        -265.61,
+        28.57,
+        33.12
+      ],
+      "severity": 4.22,
+      "t": 79.67,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.9,
+            28.53,
+            33.17
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.89,
+            28.53,
+            33.17
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.92,
+            0.0,
+            0.39
+          ],
+          "point": [
+            -262.78,
+            31.27,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.77,
+            28.53,
+            33.13
+          ]
+        }
+      ],
+      "position": [
+        -265.56,
+        28.63,
+        33.12
+      ],
+      "severity": 12.72,
+      "t": 83.18,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.64,
+            28.65,
+            33.07
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.64,
+            28.65,
+            33.07
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.9,
+            0.0,
+            0.44
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.49,
+            28.64,
+            32.97
+          ]
+        }
+      ],
+      "position": [
+        -265.69,
+        28.64,
+        33.12
+      ],
+      "severity": 12.8,
+      "t": 88.58,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.92,
+            0.0,
+            0.39
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -263.39,
+            28.41,
+            30.8
+          ]
+        }
+      ],
+      "position": [
+        -265.63,
+        28.57,
+        33.09
+      ],
+      "severity": 3.85,
+      "t": 89.62,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -264.33,
+            28.54,
+            32.28
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -264.33,
+            28.54,
+            32.28
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/@Node3D@916/@CharacterBody3D@917",
+          "normal": [
+            1.0,
+            0.01,
+            -0.05
+          ],
+          "point": [
+            -270.38,
+            28.72,
+            34.57
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -264.4,
+            28.54,
+            32.29
+          ]
+        }
+      ],
+      "position": [
+        -267.39,
+        28.61,
+        33.43
+      ],
+      "severity": 5.87,
+      "t": 91.92,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.84,
+            28.52,
+            33.12
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.83,
+            28.52,
+            33.12
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.93,
+            0.0,
+            0.36
+          ],
+          "point": [
+            -262.78,
+            31.24,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.93,
+            0.0,
+            0.36
+          ],
+          "point": [
+            -262.78,
+            31.24,
+            32.11
+          ]
+        }
+      ],
+      "position": [
+        -265.54,
+        28.62,
+        33.18
+      ],
+      "severity": 6.98,
+      "t": 93.03,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.93,
+            0.02,
+            0.36
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -264.0,
+            28.44,
+            31.24
+          ]
+        }
+      ],
+      "position": [
+        -265.57,
+        28.58,
+        33.19
+      ],
+      "severity": 4.4,
+      "t": 94.02,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -261.63,
+            28.74,
+            33.8
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -261.62,
+            28.74,
+            33.8
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.76,
+            0.0,
+            0.65
+          ],
+          "point": [
+            -262.78,
+            31.19,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -261.58,
+            28.74,
+            33.76
+          ]
+        }
+      ],
+      "position": [
+        -264.63,
+        28.82,
+        34.73
+      ],
+      "severity": 10.46,
+      "t": 98.13,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.81,
+            0.0,
+            0.59
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -264.0,
+            28.59,
+            32.72
+          ]
+        }
+      ],
+      "position": [
+        -264.65,
+        28.76,
+        34.74
+      ],
+      "severity": 3.67,
+      "t": 99.5,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -267.92,
+            28.77,
+            35.32
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -267.92,
+            28.77,
+            35.32
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.8,
+            0.0,
+            0.6
+          ],
+          "point": [
+            -262.78,
+            31.24,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -267.87,
+            28.76,
+            35.29
+          ]
+        }
+      ],
+      "position": [
+        -264.75,
+        28.78,
+        34.53
+      ],
+      "severity": 10.15,
+      "t": 103.72,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.82,
+            0.0,
+            0.58
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -264.0,
+            28.56,
+            32.48
+          ]
+        }
+      ],
+      "position": [
+        -264.79,
+        28.74,
+        34.56
+      ],
+      "severity": 3.3,
+      "t": 104.68,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.95,
+            0.0,
+            0.31
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.95,
+            0.0,
+            0.31
+          ],
+          "point": [
+            -262.81,
+            31.17,
+            32.03
+          ]
+        }
+      ],
+      "position": [
+        -265.61,
+        28.7,
+        33.81
+      ],
+      "severity": 7.11,
+      "t": 109.42,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -263.57,
+            28.41,
+            30.85
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -263.57,
+            28.41,
+            30.85
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.89,
+            0.0,
+            0.46
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -263.53,
+            28.41,
+            30.83
+          ]
+        }
+      ],
+      "position": [
+        -265.58,
+        28.59,
+        33.28
+      ],
+      "severity": 13.93,
+      "t": 115.02,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.91,
+            0.0,
+            0.41
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -263.38,
+            28.42,
+            30.92
+          ]
+        }
+      ],
+      "position": [
+        -265.56,
+        28.59,
+        33.26
+      ],
+      "severity": 3.85,
+      "t": 116.38,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.46,
+            28.67,
+            33.19
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.46,
+            28.67,
+            33.19
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.91,
+            0.0,
+            0.42
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.41,
+            28.66,
+            33.16
+          ]
+        }
+      ],
+      "position": [
+        -265.61,
+        28.65,
+        33.27
+      ],
+      "severity": 13.02,
+      "t": 120.38,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.91,
+            0.0,
+            0.4
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -264.0,
+            28.44,
+            31.19
+          ]
+        }
+      ],
+      "position": [
+        -265.57,
+        28.59,
+        33.24
+      ],
+      "severity": 3.3,
+      "t": 121.78,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.81,
+            28.53,
+            33.21
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.81,
+            28.53,
+            33.2
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.91,
+            0.0,
+            0.41
+          ],
+          "point": [
+            -262.78,
+            31.27,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.77,
+            28.53,
+            33.19
+          ]
+        }
+      ],
+      "position": [
+        -265.57,
+        28.63,
+        33.13
+      ],
+      "severity": 12.77,
+      "t": 125.83,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/@Node3D@916/@CharacterBody3D@917",
+          "normal": [
+            -0.25,
+            -0.1,
+            -0.96
+          ],
+          "point": [
+            -268.16,
+            29.18,
+            37.39
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -270.13,
+            28.78,
+            35.88
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -270.19,
+            28.78,
+            35.9
+          ]
+        }
+      ],
+      "position": [
+        -267.4,
+        28.7,
+        34.33
+      ],
+      "severity": 3.93,
+      "t": 129.17,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.72,
+            28.61,
+            32.7
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.71,
+            28.61,
+            32.69
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.9,
+            0.0,
+            0.43
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.64,
+            28.61,
+            32.65
+          ]
+        }
+      ],
+      "position": [
+        -265.84,
+        28.59,
+        32.78
+      ],
+      "severity": 8.93,
+      "t": 130.58,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.05,
+            28.74,
+            35.05
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.04,
+            28.74,
+            35.05
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.94,
+            0.0,
+            0.35
+          ],
+          "point": [
+            -262.78,
+            28.66,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -267.99,
+            28.74,
+            35.04
+          ]
+        }
+      ],
+      "position": [
+        -265.65,
+        28.6,
+        32.86
+      ],
+      "severity": 13.06,
+      "t": 135.87,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.58,
+            28.64,
+            32.96
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.57,
+            28.64,
+            32.96
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.93,
+            0.0,
+            0.37
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.55,
+            28.64,
+            32.94
+          ]
+        }
+      ],
+      "position": [
+        -265.75,
+        28.61,
+        32.86
+      ],
+      "severity": 13.35,
+      "t": 141.38,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -269.21,
+            28.48,
+            32.75
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -269.22,
+            28.48,
+            32.74
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            0.23,
+            0.0,
+            0.97
+          ],
+          "point": [
+            -272.23,
+            30.53,
+            27.42
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -269.24,
+            28.48,
+            32.75
+          ]
+        }
+      ],
+      "position": [
+        -271.81,
+        28.25,
+        30.86
+      ],
+      "severity": 3.5,
+      "t": 145.38,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.94,
+            28.51,
+            33.03
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.93,
+            28.51,
+            33.03
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.93,
+            0.0,
+            0.36
+          ],
+          "point": [
+            -262.78,
+            28.66,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.77,
+            28.51,
+            32.99
+          ]
+        }
+      ],
+      "position": [
+        -265.57,
+        28.63,
+        33.07
+      ],
+      "severity": 12.75,
+      "t": 146.65,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.93,
+            0.02,
+            0.37
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        }
+      ],
+      "position": [
+        -265.62,
+        28.57,
+        33.09
+      ],
+      "severity": 3.3,
+      "t": 147.72,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.51,
+            28.66,
+            33.16
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.51,
+            28.66,
+            33.16
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.92,
+            0.0,
+            0.38
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.46,
+            28.66,
+            33.13
+          ]
+        }
+      ],
+      "position": [
+        -265.67,
+        28.63,
+        33.1
+      ],
+      "severity": 13.02,
+      "t": 152.07,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.88,
+            28.53,
+            33.2
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.87,
+            28.53,
+            33.2
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.92,
+            0.0,
+            0.39
+          ],
+          "point": [
+            -262.78,
+            31.27,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.74,
+            28.53,
+            33.16
+          ]
+        }
+      ],
+      "position": [
+        -265.54,
+        28.63,
+        33.16
+      ],
+      "severity": 12.67,
+      "t": 157.48,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.52,
+            28.66,
+            33.13
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.51,
+            28.66,
+            33.12
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.91,
+            0.0,
+            0.42
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.45,
+            28.66,
+            33.09
+          ]
+        }
+      ],
+      "position": [
+        -265.65,
+        28.64,
+        33.17
+      ],
+      "severity": 13.35,
+      "t": 162.93,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.91,
+            28.52,
+            33.06
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.91,
+            28.52,
+            33.06
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.92,
+            0.0,
+            0.38
+          ],
+          "point": [
+            -262.78,
+            31.27,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.79,
+            28.52,
+            33.02
+          ]
+        }
+      ],
+      "position": [
+        -265.59,
+        28.62,
+        33.05
+      ],
+      "severity": 12.95,
+      "t": 168.4,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.53,
+            28.65,
+            33.0
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.52,
+            28.65,
+            33.0
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.91,
+            0.0,
+            0.41
+          ],
+          "point": [
+            -262.78,
+            31.17,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -262.5,
+            28.64,
+            32.99
+          ]
+        }
+      ],
+      "position": [
+        -265.71,
+        28.63,
+        33.04
+      ],
+      "severity": 12.98,
+      "t": 173.82,
+      "target": 7
+    },
+    {
+      "collisions": [
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.85,
+            28.52,
+            33.08
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.85,
+            28.52,
+            33.08
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.92,
+            0.0,
+            0.38
+          ],
+          "point": [
+            -262.78,
+            31.28,
+            32.11
+          ]
+        },
+        {
+          "collider": "/root/HongKongBus/SheungWanCentral/DistrictCollision",
+          "normal": [
+            -0.02,
+            0.99,
+            -0.1
+          ],
+          "point": [
+            -268.78,
+            28.52,
+            33.06
+          ]
+        }
+      ],
+      "position": [
+        -265.57,
+        28.63,
+        33.08
+      ],
+      "severity": 12.9,
+      "t": 179.23,
+      "target": 7
+    }
+  ],
+  "picked_up": 27,
+  "player": {
+    "boarded": 27,
+    "capacity": 19,
+    "cash": 462,
+    "contracts_completed": 0,
+    "contracts_failed": 0,
+    "delivered": 18,
+    "dispatch_total": 0,
+    "dock_bonus": 0,
+    "dock_grade": "",
+    "dock_stop": -1,
+    "fare_total": 425,
+    "impacts": 31,
+    "last_dock_at": 42.5333333333672,
+    "last_stop": 5,
+    "name": "You",
+    "precise_stops": 0,
+    "stops_served": [
+      4,
+      5
+    ],
+    "tip_total": 37
+  },
+  "player_cash": 462,
+  "policy": "local",
+  "rank": 4,
+  "reverse_maneuvers": 24,
+  "rival_cash": [
+    1259,
+    1600,
+    1031
+  ],
+  "samples": [
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -95.73,
+        18.18,
+        -111.96
+      ],
+      "remaining_waypoints": 9,
+      "riders": 0,
+      "speed": 0.0,
+      "t": 0.02,
+      "target": 0,
+      "waypoint": [
+        -97.56,
+        19.06,
+        -104.32
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -92.64,
+        18.51,
+        -109.65
+      ],
+      "remaining_waypoints": 9,
+      "riders": 0,
+      "speed": 6.15,
+      "t": 1.0,
+      "target": 0,
+      "waypoint": [
+        -97.56,
+        19.06,
+        -104.32
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -92.56,
+        19.14,
+        -103.58
+      ],
+      "remaining_waypoints": 6,
+      "riders": 0,
+      "speed": 6.25,
+      "t": 2.02,
+      "target": 0,
+      "waypoint": [
+        -86.03,
+        19.38,
+        -101.3
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -89.72,
+        19.67,
+        -98.52
+      ],
+      "remaining_waypoints": 4,
+      "riders": 0,
+      "speed": 6.17,
+      "t": 3.02,
+      "target": 0,
+      "waypoint": [
+        -85.52,
+        18.95,
+        -105.67
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -83.97,
+        19.59,
+        -99.41
+      ],
+      "remaining_waypoints": 4,
+      "riders": 0,
+      "speed": 6.08,
+      "t": 4.02,
+      "target": 0,
+      "waypoint": [
+        -85.52,
+        18.95,
+        -105.67
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -82.95,
+        18.98,
+        -105.54
+      ],
+      "remaining_waypoints": 3,
+      "riders": 0,
+      "speed": 6.58,
+      "t": 5.02,
+      "target": 0,
+      "waypoint": [
+        -86.31,
+        18.37,
+        -111.15
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -84.7,
+        18.23,
+        -111.81
+      ],
+      "remaining_waypoints": 1,
+      "riders": 0,
+      "speed": 5.33,
+      "t": 6.02,
+      "target": 0,
+      "waypoint": [
+        -80.8,
+        18.02,
+        -113.79
+      ]
+    },
+    {
+      "at_stop": true,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -84.69,
+        18.13,
+        -112.59
+      ],
+      "remaining_waypoints": 1,
+      "riders": 0,
+      "speed": 0.0,
+      "t": 7.02,
+      "target": 0,
+      "waypoint": [
+        -80.8,
+        18.02,
+        -113.79
+      ]
+    },
+    {
+      "at_stop": true,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -84.69,
+        18.15,
+        -112.59
+      ],
+      "remaining_waypoints": 1,
+      "riders": 4,
+      "speed": 0.0,
+      "t": 8.02,
+      "target": 0,
+      "waypoint": [
+        -80.8,
+        18.02,
+        -113.79
+      ]
+    },
+    {
+      "at_stop": true,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -84.69,
+        18.15,
+        -112.59
+      ],
+      "remaining_waypoints": 1,
+      "riders": 8,
+      "speed": 0.0,
+      "t": 9.0,
+      "target": 0,
+      "waypoint": [
+        -80.8,
+        18.02,
+        -113.79
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -84.49,
+        18.04,
+        -113.66
+      ],
+      "remaining_waypoints": 23,
+      "riders": 10,
+      "speed": 5.5,
+      "t": 10.0,
+      "target": 4,
+      "waypoint": [
+        -80.26,
+        18.97,
+        -105.63
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -80.07,
+        17.58,
+        -117.27
+      ],
+      "remaining_waypoints": 23,
+      "riders": 10,
+      "speed": 6.0,
+      "t": 11.0,
+      "target": 4,
+      "waypoint": [
+        -80.26,
+        18.97,
+        -105.63
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -75.01,
+        17.95,
+        -114.43
+      ],
+      "remaining_waypoints": 23,
+      "riders": 10,
+      "speed": 6.5,
+      "t": 12.0,
+      "target": 4,
+      "waypoint": [
+        -80.26,
+        18.97,
+        -105.63
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -76.18,
+        18.67,
+        -108.4
+      ],
+      "remaining_waypoints": 22,
+      "riders": 10,
+      "speed": 8.17,
+      "t": 13.0,
+      "target": 4,
+      "waypoint": [
+        -80.8,
+        19.3,
+        -102.24
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -81.04,
+        19.78,
+        -97.21
+      ],
+      "remaining_waypoints": 20,
+      "riders": 10,
+      "speed": 18.58,
+      "t": 14.0,
+      "target": 4,
+      "waypoint": [
+        -83.32,
+        20.64,
+        -88.43
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -85.44,
+        21.56,
+        -78.8
+      ],
+      "remaining_waypoints": 17,
+      "riders": 10,
+      "speed": 17.92,
+      "t": 15.0,
+      "target": 4,
+      "waypoint": [
+        -88.24,
+        23.09,
+        -63.16
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -87.7,
+        22.71,
+        -67.13
+      ],
+      "remaining_waypoints": 16,
+      "riders": 10,
+      "speed": 12.0,
+      "t": 16.0,
+      "target": 4,
+      "waypoint": [
+        -95.3,
+        24.19,
+        -51.46
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -94.8,
+        24.06,
+        -52.65
+      ],
+      "remaining_waypoints": 15,
+      "riders": 10,
+      "speed": 19.5,
+      "t": 17.0,
+      "target": 4,
+      "waypoint": [
+        -98.01,
+        24.6,
+        -47.02
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -100.71,
+        24.92,
+        -43.83
+      ],
+      "remaining_waypoints": 12,
+      "riders": 10,
+      "speed": 6.0,
+      "t": 18.0,
+      "target": 4,
+      "waypoint": [
+        -107.82,
+        24.62,
+        -46.07
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -109.79,
+        24.52,
+        -46.96
+      ],
+      "remaining_waypoints": 10,
+      "riders": 10,
+      "speed": 16.42,
+      "t": 19.0,
+      "target": 4,
+      "waypoint": [
+        -117.92,
+        23.97,
+        -52.27
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -125.26,
+        23.45,
+        -57.1
+      ],
+      "remaining_waypoints": 7,
+      "riders": 10,
+      "speed": 19.25,
+      "t": 20.0,
+      "target": 4,
+      "waypoint": [
+        -133.82,
+        22.96,
+        -61.99
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -136.71,
+        22.73,
+        -63.94
+      ],
+      "remaining_waypoints": 5,
+      "riders": 10,
+      "speed": 8.08,
+      "t": 21.0,
+      "target": 4,
+      "waypoint": [
+        -147.37,
+        22.48,
+        -65.2
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -149.32,
+        22.49,
+        -64.41
+      ],
+      "remaining_waypoints": 3,
+      "riders": 10,
+      "speed": 19.08,
+      "t": 22.0,
+      "target": 4,
+      "waypoint": [
+        -165.22,
+        22.47,
+        -61.35
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 0,
+      "grounded": true,
+      "position": [
+        -166.32,
+        22.43,
+        -61.28
+      ],
+      "remaining_waypoints": 2,
+      "riders": 10,
+      "speed": 8.1,
+      "t": 23.02,
+      "target": 4,
+      "waypoint": [
+        -174.2,
+        22.47,
+        -59.2
+      ]
+    },
+    {
+      "at_stop": true,
+      "cash": 46,
+      "grounded": true,
+      "position": [
+        -169.61,
+        22.43,
+        -60.55
+      ],
+      "remaining_waypoints": 1,
+      "riders": 8,
+      "speed": 0.0,
+      "t": 24.02,
+      "target": 4,
+      "waypoint": [
+        -173.07,
+        21.92,
+        -65.64
+      ]
+    },
+    {
+      "at_stop": true,
+      "cash": 169,
+      "grounded": true,
+      "position": [
+        -169.61,
+        22.43,
+        -60.55
+      ],
+      "remaining_waypoints": 1,
+      "riders": 3,
+      "speed": 0.0,
+      "t": 25.02,
+      "target": 4,
+      "waypoint": [
+        -173.07,
+        21.92,
+        -65.64
+      ]
+    },
+    {
+      "at_stop": true,
+      "cash": 169,
+      "grounded": true,
+      "position": [
+        -169.61,
+        22.43,
+        -60.55
+      ],
+      "remaining_waypoints": 1,
+      "riders": 7,
+      "speed": 0.0,
+      "t": 26.02,
+      "target": 4,
+      "waypoint": [
+        -173.07,
+        21.92,
+        -65.64
+      ]
+    },
+    {
+      "at_stop": true,
+      "cash": 169,
+      "grounded": true,
+      "position": [
+        -169.61,
+        22.43,
+        -60.55
+      ],
+      "remaining_waypoints": 1,
+      "riders": 11,
+      "speed": 0.0,
+      "t": 27.02,
+      "target": 4,
+      "waypoint": [
+        -173.07,
+        21.92,
+        -65.64
+      ]
+    },
+    {
+      "at_stop": true,
+      "cash": 169,
+      "grounded": true,
+      "position": [
+        -169.61,
+        22.43,
+        -60.55
+      ],
+      "remaining_waypoints": 1,
+      "riders": 14,
+      "speed": 0.0,
+      "t": 28.02,
+      "target": 4,
+      "waypoint": [
+        -173.07,
+        21.92,
+        -65.64
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 169,
+      "grounded": true,
+      "position": [
+        -170.39,
+        22.44,
+        -60.38
+      ],
+      "remaining_waypoints": 25,
+      "riders": 17,
+      "speed": 4.77,
+      "t": 29.02,
+      "target": 5,
+      "waypoint": [
+        -186.31,
+        22.48,
+        -56.29
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 169,
+      "grounded": true,
+      "position": [
+        -178.54,
+        22.47,
+        -58.09
+      ],
+      "remaining_waypoints": 25,
+      "riders": 17,
+      "speed": 10.52,
+      "t": 30.02,
+      "target": 5,
+      "waypoint": [
+        -186.31,
+        22.48,
+        -56.29
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 169,
+      "grounded": true,
+      "position": [
+        -190.64,
+        22.67,
+        -52.83
+      ],
+      "remaining_waypoints": 23,
+      "riders": 17,
+      "speed": 19.18,
+      "t": 31.02,
+      "target": 5,
+      "waypoint": [
+        -204.6,
+        23.11,
+        -44.51
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 169,
+      "grounded": true,
+      "position": [
+        -207.03,
+        23.16,
+        -43.04
+      ],
+      "remaining_waypoints": 22,
+      "riders": 17,
+      "speed": 19.1,
+      "t": 32.02,
+      "target": 5,
+      "waypoint": [
+        -213.94,
+        23.41,
+        -38.49
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 169,
+      "grounded": true,
+      "position": [
+        -219.25,
+        23.54,
+        -35.36
+      ],
+      "remaining_waypoints": 20,
+      "riders": 17,
+      "speed": 6.77,
+      "t": 33.02,
+      "target": 5,
+      "waypoint": [
+        -225.53,
+        23.76,
+        -31.18
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 169,
+      "grounded": true,
+      "position": [
+        -228.31,
+        23.54,
+        -32.8
+      ],
+      "remaining_waypoints": 19,
+      "riders": 17,
+      "speed": 15.43,
+      "t": 34.02,
+      "target": 5,
+      "waypoint": [
+        -234.4,
+        23.48,
+        -31.97
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 169,
+      "grounded": true,
+      "position": [
+        -241.84,
+        23.59,
+        -28.46
+      ],
+      "remaining_waypoints": 13,
+      "riders": 17,
+      "speed": 13.6,
+      "t": 35.02,
+      "target": 5,
+      "waypoint": [
+        -252.39,
+        24.15,
+        -18.37
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 169,
+      "grounded": true,
+      "position": [
+        -253.99,
+        24.26,
+        -16.27
+      ],
+      "remaining_waypoints": 12,
+      "riders": 17,
+      "speed": 19.35,
+      "t": 36.02,
+      "target": 5,
+      "waypoint": [
+        -260.5,
+        24.71,
+        -8.83
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 169,
+      "grounded": true,
+      "position": [
+        -266.46,
+        25.13,
+        -1.71
+      ],
+      "remaining_waypoints": 10,
+      "riders": 17,
+      "speed": 19.27,
+      "t": 37.02,
+      "target": 5,
+      "waypoint": [
+        -276.71,
+        26.02,
+        10.26
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 169,
+      "grounded": true,
+      "position": [
+        -278.91,
+        26.24,
+        12.85
+      ],
+      "remaining_waypoints": 9,
+      "riders": 17,
+      "speed": 19.18,
+      "t": 38.02,
+      "target": 5,
+      "waypoint": [
+        -284.99,
+        26.97,
+        20.0
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 169,
+      "grounded": true,
+      "position": [
+        -289.17,
+        27.86,
+        28.17
+      ],
+      "remaining_waypoints": 4,
+      "riders": 17,
+      "speed": 13.27,
+      "t": 39.02,
+      "target": 5,
+      "waypoint": [
+        -290.36,
+        28.76,
+        36.73
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 169,
+      "grounded": true,
+      "position": [
+        -291.62,
+        28.62,
+        35.09
+      ],
+      "remaining_waypoints": 3,
+      "riders": 17,
+      "speed": 6.18,
+      "t": 40.02,
+      "target": 5,
+      "waypoint": [
+        -301.24,
+        28.11,
+        29.67
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 169,
+      "grounded": true,
+      "position": [
+        -297.85,
+        28.7,
+        35.04
+      ],
+      "remaining_waypoints": 3,
+      "riders": 17,
+      "speed": 10.18,
+      "t": 41.02,
+      "target": 5,
+      "waypoint": [
+        -301.24,
+        28.11,
+        29.67
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 169,
+      "grounded": true,
+      "position": [
+        -302.74,
+        28.11,
+        29.73
+      ],
+      "remaining_waypoints": 2,
+      "riders": 17,
+      "speed": 6.6,
+      "t": 42.02,
+      "target": 5,
+      "waypoint": [
+        -307.21,
+        27.64,
+        24.82
+      ]
+    },
+    {
+      "at_stop": true,
+      "cash": 225,
+      "grounded": true,
+      "position": [
+        -304.61,
+        27.88,
+        27.4
+      ],
+      "remaining_waypoints": 1,
+      "riders": 15,
+      "speed": 0.0,
+      "t": 43.02,
+      "target": 5,
+      "waypoint": [
+        -301.41,
+        27.27,
+        21.8
+      ]
+    },
+    {
+      "at_stop": true,
+      "cash": 382,
+      "grounded": true,
+      "position": [
+        -304.61,
+        27.88,
+        27.4
+      ],
+      "remaining_waypoints": 1,
+      "riders": 9,
+      "speed": 0.0,
+      "t": 44.02,
+      "target": 5,
+      "waypoint": [
+        -301.41,
+        27.27,
+        21.8
+      ]
+    },
+    {
+      "at_stop": true,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -304.61,
+        27.88,
+        27.4
+      ],
+      "remaining_waypoints": 1,
+      "riders": 7,
+      "speed": 0.0,
+      "t": 45.02,
+      "target": 5,
+      "waypoint": [
+        -301.41,
+        27.27,
+        21.8
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -305.09,
+        27.71,
+        25.55
+      ],
+      "remaining_waypoints": 40,
+      "riders": 9,
+      "speed": 5.98,
+      "t": 46.02,
+      "target": 7,
+      "waypoint": [
+        -297.96,
+        27.66,
+        25.63
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -302.16,
+        27.17,
+        20.56
+      ],
+      "remaining_waypoints": 40,
+      "riders": 9,
+      "speed": 6.48,
+      "t": 47.02,
+      "target": 7,
+      "waypoint": [
+        -297.96,
+        27.66,
+        25.63
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -295.88,
+        27.31,
+        22.11
+      ],
+      "remaining_waypoints": 39,
+      "riders": 9,
+      "speed": 9.32,
+      "t": 48.02,
+      "target": 7,
+      "waypoint": [
+        -291.08,
+        28.19,
+        31.21
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -292.06,
+        27.96,
+        28.58
+      ],
+      "remaining_waypoints": 37,
+      "riders": 9,
+      "speed": 10.4,
+      "t": 49.02,
+      "target": 7,
+      "waypoint": [
+        -284.85,
+        28.39,
+        33.7
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -283.14,
+        28.32,
+        33.22
+      ],
+      "remaining_waypoints": 35,
+      "riders": 9,
+      "speed": 10.32,
+      "t": 50.02,
+      "target": 7,
+      "waypoint": [
+        -276.78,
+        28.54,
+        34.9
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -268.88,
+        28.51,
+        33.06
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 18.98,
+      "t": 51.02,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.92,
+        28.48,
+        32.27
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.37,
+      "t": 52.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.92,
+        28.48,
+        32.27
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.74,
+      "t": 53.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -266.17,
+        28.49,
+        32.34
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -2.41,
+      "t": 54.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -269.65,
+        28.86,
+        36.4
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": -7.0,
+      "t": 55.02,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -269.59,
+        28.83,
+        36.16
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 5.98,
+      "t": 56.02,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.91,
+        28.49,
+        32.28
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.0,
+      "t": 57.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.91,
+        28.49,
+        32.28
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 2.57,
+      "t": 58.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.91,
+        28.48,
+        32.28
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.19,
+      "t": 59.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -268.24,
+        28.48,
+        32.33
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -6.6,
+      "t": 60.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -270.6,
+        28.35,
+        31.6
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 5.64,
+      "t": 61.02,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.73,
+        28.53,
+        32.69
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.92,
+      "t": 62.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.73,
+        28.53,
+        32.69
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 1.1,
+      "t": 63.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.73,
+        28.53,
+        32.69
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 1.83,
+      "t": 64.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -267.56,
+        28.64,
+        33.78
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -6.35,
+      "t": 65.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -269.19,
+        29.02,
+        38.27
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 2.02,
+      "t": 66.02,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.98,
+        28.59,
+        32.76
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 13.02,
+      "t": 67.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.76,
+        28.53,
+        32.65
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 1.28,
+      "t": 68.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.76,
+        28.52,
+        32.65
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.0,
+      "t": 69.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -266.44,
+        28.55,
+        32.82
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -3.8,
+      "t": 70.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -271.9,
+        28.24,
+        30.87
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 0.17,
+      "t": 71.02,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -268.44,
+        28.6,
+        33.35
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 9.42,
+      "t": 72.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.59,
+        28.58,
+        33.18
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 2.38,
+      "t": 73.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.59,
+        28.58,
+        33.18
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 2.02,
+      "t": 74.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.63,
+        28.58,
+        33.19
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -1.16,
+      "t": 75.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -268.49,
+        28.91,
+        36.6
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -8.0,
+      "t": 76.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -268.66,
+        29.03,
+        38.12
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 5.68,
+      "t": 77.02,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.63,
+        28.59,
+        33.13
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.18,
+      "t": 78.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.61,
+        28.58,
+        33.12
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.0,
+      "t": 79.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.61,
+        28.57,
+        33.12
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.55,
+      "t": 80.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -267.59,
+        28.61,
+        33.49
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -6.17,
+      "t": 81.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -272.12,
+        28.22,
+        30.98
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 1.45,
+      "t": 82.02,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -267.49,
+        28.63,
+        33.45
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 10.7,
+      "t": 83.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.61,
+        28.58,
+        33.14
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.55,
+      "t": 84.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.61,
+        28.58,
+        33.14
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.55,
+      "t": 85.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.77,
+        28.59,
+        33.21
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -2.09,
+      "t": 86.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -268.67,
+        28.99,
+        37.45
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": -7.33,
+      "t": 87.02,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -268.65,
+        28.97,
+        37.42
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 6.97,
+      "t": 88.02,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.63,
+        28.58,
+        33.09
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.18,
+      "t": 89.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.63,
+        28.57,
+        33.09
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.0,
+      "t": 90.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.63,
+        28.57,
+        33.09
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.0,
+      "t": 91.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -267.39,
+        28.59,
+        33.43
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.0,
+      "t": 92.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.74,
+        28.62,
+        33.24
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 6.62,
+      "t": 93.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.57,
+        28.58,
+        33.19
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 4.22,
+      "t": 94.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.57,
+        28.58,
+        33.19
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 1.28,
+      "t": 95.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.83,
+        28.6,
+        33.3
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -2.64,
+      "t": 96.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -266.1,
+        29.08,
+        37.93
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": -3.81,
+      "t": 97.02,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.31,
+        28.88,
+        35.6
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 8.99,
+      "t": 98.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -264.65,
+        28.76,
+        34.74
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.92,
+      "t": 99.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -264.65,
+        28.76,
+        34.74
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 2.57,
+      "t": 100.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -264.9,
+        28.78,
+        34.89
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -2.6,
+      "t": 101.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -270.37,
+        28.7,
+        34.9
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": -6.33,
+      "t": 102.02,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -269.75,
+        28.74,
+        35.17
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 6.35,
+      "t": 103.02,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -264.78,
+        28.74,
+        34.55
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.37,
+      "t": 104.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -264.79,
+        28.74,
+        34.56
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.73,
+      "t": 105.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -264.79,
+        28.74,
+        34.56
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 1.47,
+      "t": 106.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.85,
+        28.85,
+        35.57
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -5.32,
+      "t": 107.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.46,
+        29.37,
+        41.0
+      ],
+      "remaining_waypoints": 33,
+      "riders": 9,
+      "speed": 1.1,
+      "t": 108.02,
+      "target": 7,
+      "waypoint": [
+        -267.49,
+        28.55,
+        33.1
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -266.38,
+        28.91,
+        36.34
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 6.27,
+      "t": 109.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.73,
+        28.6,
+        33.39
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.03,
+      "t": 110.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.78,
+        28.59,
+        33.3
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.03,
+      "t": 111.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.82,
+        28.58,
+        33.21
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.02,
+      "t": 112.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -268.36,
+        28.72,
+        34.68
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -7.38,
+      "t": 113.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -272.69,
+        28.51,
+        33.89
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 2.75,
+      "t": 114.02,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.63,
+        28.6,
+        33.31
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 13.75,
+      "t": 115.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.56,
+        28.59,
+        33.26
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.18,
+      "t": 116.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.56,
+        28.59,
+        33.26
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 1.1,
+      "t": 117.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.9,
+        28.61,
+        33.42
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -2.95,
+      "t": 118.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -268.53,
+        29.05,
+        38.24
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": -4.0,
+      "t": 119.02,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -268.08,
+        28.86,
+        36.0
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 8.8,
+      "t": 120.02,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.57,
+        28.59,
+        33.25
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.92,
+      "t": 121.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.57,
+        28.59,
+        33.24
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 2.2,
+      "t": 122.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.57,
+        28.59,
+        33.24
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -0.37,
+      "t": 123.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -269.32,
+        28.57,
+        33.3
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -8.0,
+      "t": 124.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -271.45,
+        28.35,
+        31.89
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 4.77,
+      "t": 125.02,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.6,
+        28.59,
+        33.14
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.18,
+      "t": 126.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.6,
+        28.58,
+        33.15
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 1.28,
+      "t": 127.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.6,
+        28.58,
+        33.15
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 1.47,
+      "t": 128.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -266.76,
+        28.65,
+        33.82
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -5.1,
+      "t": 129.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -267.8,
+        28.71,
+        34.85
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 2.52,
+      "t": 130.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.77,
+        28.54,
+        32.75
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.0,
+      "t": 131.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.74,
+        28.53,
+        32.73
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.55,
+      "t": 132.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.74,
+        28.53,
+        32.73
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.55,
+      "t": 133.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -267.91,
+        28.55,
+        32.96
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -6.43,
+      "t": 134.02,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -271.49,
+        28.27,
+        31.17
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 3.53,
+      "t": 135.02,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.67,
+        28.57,
+        32.86
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.0,
+      "t": 136.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.69,
+        28.55,
+        32.87
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 1.83,
+      "t": 137.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.69,
+        28.55,
+        32.87
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.0,
+      "t": 138.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -266.47,
+        28.59,
+        33.23
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -4.15,
+      "t": 139.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -268.97,
+        29.07,
+        38.58
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": -2.67,
+      "t": 140.0,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -268.5,
+        28.81,
+        35.63
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 8.95,
+      "t": 141.0,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.71,
+        28.55,
+        32.84
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 1.47,
+      "t": 142.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.71,
+        28.55,
+        32.84
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.37,
+      "t": 143.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.71,
+        28.55,
+        32.84
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -0.57,
+      "t": 144.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -269.67,
+        28.49,
+        32.62
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -8.0,
+      "t": 145.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -270.89,
+        28.4,
+        32.1
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 6.0,
+      "t": 146.0,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.61,
+        28.58,
+        33.09
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.55,
+      "t": 147.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.62,
+        28.57,
+        33.09
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.0,
+      "t": 148.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.62,
+        28.57,
+        33.09
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 1.83,
+      "t": 149.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -266.88,
+        28.65,
+        33.83
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -5.35,
+      "t": 150.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -268.78,
+        29.06,
+        38.59
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 1.1,
+      "t": 151.0,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -266.37,
+        28.66,
+        33.55
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 12.1,
+      "t": 152.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.62,
+        28.57,
+        33.08
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.92,
+      "t": 153.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.62,
+        28.57,
+        33.08
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 1.1,
+      "t": 154.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -266.04,
+        28.59,
+        33.21
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -3.08,
+      "t": 155.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -271.5,
+        28.33,
+        31.54
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": -5.33,
+      "t": 156.0,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -269.97,
+        28.51,
+        32.89
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 7.17,
+      "t": 157.0,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.59,
+        28.58,
+        33.18
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.18,
+      "t": 158.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.59,
+        28.58,
+        33.18
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 2.02,
+      "t": 159.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.59,
+        28.58,
+        33.18
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 2.2,
+      "t": 160.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -268.04,
+        28.8,
+        35.37
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -7.8,
+      "t": 161.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -268.62,
+        29.12,
+        39.11
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 3.48,
+      "t": 162.0,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.65,
+        28.62,
+        33.17
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.55,
+      "t": 163.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.61,
+        28.58,
+        33.14
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.0,
+      "t": 164.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.61,
+        28.58,
+        33.14
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.0,
+      "t": 165.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -266.39,
+        28.61,
+        33.38
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -4.07,
+      "t": 166.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -271.89,
+        28.28,
+        31.28
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": -2.67,
+      "t": 167.0,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -269.58,
+        28.54,
+        33.01
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 8.37,
+      "t": 168.0,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.63,
+        28.57,
+        33.07
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 1.1,
+      "t": 169.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.63,
+        28.57,
+        33.07
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 1.47,
+      "t": 170.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.63,
+        28.57,
+        33.07
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -0.27,
+      "t": 171.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -268.27,
+        28.82,
+        35.63
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -8.0,
+      "t": 172.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -268.74,
+        29.06,
+        38.52
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 4.4,
+      "t": 173.0,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.68,
+        28.58,
+        33.03
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.55,
+      "t": 174.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.65,
+        28.56,
+        33.01
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 1.1,
+      "t": 175.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.65,
+        28.56,
+        33.01
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 1.83,
+      "t": 176.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -266.84,
+        28.6,
+        33.3
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": -4.91,
+      "t": 177.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -271.98,
+        28.23,
+        30.91
+      ],
+      "remaining_waypoints": 32,
+      "riders": 9,
+      "speed": 0.32,
+      "t": 178.0,
+      "target": 7,
+      "waypoint": [
+        -262.94,
+        28.5,
+        31.66
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -268.12,
+        28.61,
+        33.32
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 10.16,
+      "t": 179.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    },
+    {
+      "at_stop": false,
+      "cash": 462,
+      "grounded": true,
+      "position": [
+        -265.62,
+        28.57,
+        33.1
+      ],
+      "remaining_waypoints": 31,
+      "riders": 9,
+      "speed": 0.0,
+      "t": 180.0,
+      "target": 7,
+      "waypoint": [
+        -258.15,
+        28.46,
+        30.22
+      ]
+    }
+  ],
+  "seed": 20261113,
+  "time": 180.000000000035,
+  "visits": [
+    {
+      "arrival": 6.2,
+      "boarded": 10,
+      "cash": 0,
+      "delivered": 0,
+      "dwell": 3.3,
+      "name": "Western Market",
+      "position_error": 4.07096862792969,
+      "stop": 0
+    },
+    {
+      "arrival": 23.57,
+      "boarded": 14,
+      "cash": 169,
+      "delivered": 7,
+      "dwell": 5.02,
+      "name": "Bonham Strand",
+      "position_error": 6.15478420257568,
+      "stop": 4
+    },
+    {
+      "arrival": 42.55,
+      "boarded": 3,
+      "cash": 293,
+      "delivered": 11,
+      "dwell": 2.82,
+      "name": "Hollywood Road Park",
+      "position_error": 6.44367361068726,
+      "stop": 5
+    }
+  ]
+}

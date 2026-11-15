@@ -1,34 +1,27 @@
-# Validation
+# Validation — v0.2
 
-Tested locally with Godot **4.6.1**, Blender **5.2.2**, and the OpenGL Compatibility renderer on Apple M5 Pro hardware, 13 November 2026.
+Reviewed with Godot 4.6.1 and the OpenGL Compatibility renderer on this Apple M5 Pro Mac. The original v0.1 validation is retained in `tools/archive_v1/docs/VALIDATION.md`.
 
 ## Automated checks
 
-- **202 rules checks**: destination validity, default 19 seats, boarding capacity, unloading before boarding, exact fare accounting, shared queues, AI fares, timer expiry, no service after expiry, idempotent settlement, all medal ranks, no zero-fare bonus farming, upgraded capacity, and connectivity of every stop pair.
-- **21 gameplay checks**: scene startup/countdown, injected acceleration and braking, physical movement and building collision, real bay boarding, pause, destination drop-off, complete 180-second match, productive rival earnings, banked results, duplicate-payout protection, seat/door upgrades, new bus purchase, save/load, and replay reset.
-- **Six injected UI interactions**: start, map stop selection, pause/resume, results-to-garage, seat upgrade, and new-bus purchase. Screens captured and visually inspected for title, countdown, driving, full map, pause, results, garage and green-roof vehicle.
-- Strict `godot-headless` startup validation: **passed**, with no unexpected script/resource errors.
-- Both debug and release macOS app bundles were launched independently of the editor and rendered a viewport screenshot successfully. Local ad-hoc signature verified with `codesign --verify --deep --strict`.
+`tests/run_checks.sh` passed with **9,120 rules/graph checks**, **320 gameplay-system checks**, and **23 scene-integration checks**. Coverage includes all 12 destinations and 132 directed stop pairs, capacity and fares, shared queues, dispatch quote/acceptance consistency, expiry and tips, settlement, physical acceleration/braking, bay service, pause, upgrades, save/load and replay. Integration rivals earned $1,073 / $1,262 / $624 across the complete shift.
 
-The rules/gameplay runners use separate test saves. The full-match gameplay integration test accelerates simulation by calling normal gameplay methods; it also moves the bus directly between selected stops to exercise service and payout flows. This is distinct from the rendered driving test below.
+`tools/capture_v2.gd` passed all eight UI checks on the final city: start, direct express selection, actual bay boarding, twelfth-stop selection, navigation/express separation, dispatch acceptance, resume and results-to-garage flow. Its results screen uses fixture scores, not a claimed driving outcome.
 
-## Physical-control playtest
+## Physical driving
 
-`tools/playtest.gd` runs the whole three-minute race through injected throttle, steering, reverse and brake actions. It follows the street graph, services passengers through the normal game logic, and captures the viewport. It does **not** teleport the bus or grant fares. The seed is fixed to `20261113` for repeatability; timing can vary slightly with rendering load. The final capture run uses `--fixed-fps 60`, which preserves fixed simulation steps while allowing the run to proceed without real-time synchronization.
+Full 180-second local, express and dispatch runs used digital steering/throttle/brake input, physical motion and normal passenger service. They did not teleport the player or grant fares. Test-controller defects and the Hollywood building-clearance defect were corrected before comparison. Detailed evidence and revision distinctions are in [DRIVING.md](DRIVING.md) and `gameplay_experiments/physical_*.json`.
 
-The final rendered run completed **41 deliveries** for **HK$1,276**, taking gold. The rivals earned **HK$966 / HK$852 / HK$1,051**. It used no rescue teleports and recorded one collision. The actual outcome is recorded in `PLAYTEST_REPORT.json`. Its screenshots are in `captures/playtest_*.png`, including `playtest_results.png`. `review_results_layout.png` is a separate UI fixture with artificial scores and must not be treated as evidence of driving results.
+The rendered express run completed **48 deliveries, HK$1,432, silver**, with **zero collisions or recovery manoeuvres**, covering 2.13 km. Background drawing suspension made its engine FPS readings invalid as a rendering benchmark; no certified FPS claim is made.
 
-Issues found and corrected during these runs:
+Actual screenshots revealed occlusion at Western Market and Hollywood Road. The final generator now applies local scale before rotation, matching rendered boxes to collision shapes. The camera uses a sphere sweep plus a higher fallback. `tools/review_camera.gd` repeated 46 seconds of physical driving and captured both previously obstructed views; the bus and road are now visible in `captures/v2/camera_010_chase.png` and `camera_045_high.png`. These visual fixes leave the tested road/building collision geometry unchanged.
 
-1. Headless scene baking discarded MultiMesh transform buffers. City baking now requires an active renderer, and the saved city was inspected in the real game.
-2. Overlarge world stop labels obscured the road. Reduced their size and hid them in the menu preview.
-3. The vehicle collision box initially let the wheels sink into the road. Corrected its vertical offset.
-4. Oncoming rivals could push the player with kinematic movement. Added left-side lanes and forward yielding.
-5. Mutually yielding rivals could deadlock at turns. Added deterministic intersection priority with a three-second clearance reservation; full-match tests now require every rival to earn more than HK$200.
-6. Modal-map clicks could reach the underlying HUD. Modal screens now own their hit regions.
-7. The idle service bar kept cycling after a queue emptied. It now stops when no service is happening.
-8. The initial automated driver aimed too precisely at occupied bay centers. It now recognizes the actual game service area and can reverse-steer out of traffic without using rescue teleportation.
+## Interpretation
 
-## Scope of review
+The tests establish working systems and feasible driving routes, not subjective fun or optimal balance. Six-seed strategy simulations and three physical policies reveal different passenger completion, route choice and earnings tradeoffs. See [GAMEPLAY.md](GAMEPLAY.md) for hypotheses, rejected ideas and findings. Human review remains the next test of enjoyment and clarity.
 
-This validates the local macOS slice and its core loops. It is not multiplayer, cross-platform certification, or a long-term economy balance study. The city is a compressed, flat interpretation of the district. The Jade Express is a livery/stat variant of the same original bus mesh. AI uses a small authored road graph and simplified right-of-way rules.
+The city uses real topology/footprints, widened roads, smoothed terrain and original stylized architecture. It is not a surveyed digital twin. Traffic and rivals use simplified yielding. The Jade Express remains a livery/stat variant of the same minibus model.
+
+## Standalone build
+
+Both the debug and final release app launched independently of the editor and rendered the enlarged city with the new gameplay HUD. Release `builds/Hong Kong Bus.app` reports version **0.2.0**, passed `codesign --verify --deep --strict`, and saved `v02_release_smoke.png` without script/resource errors. The release preview is copied to `captures/v2/release_smoke.png`. `git diff --check` also passed. The app is locally ad-hoc signed for review, not notarized for public distribution.
