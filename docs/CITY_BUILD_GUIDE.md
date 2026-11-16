@@ -20,7 +20,7 @@
 9. **Stylised, not photoreal.** Keep the project's flat, three-band toon look and warm/teal palette, but with *real proportions and real clutter*. The goal is "illustrated Hong Kong", not "low-effort boxes" and not "photo textures".
 10. **Do not ship third-party photos or Google/Cesium data.** Reference images are for looking at only. Generated textures must be original or CC0. See §5.
 11. **Milestone scope: static buildings and street blocks only.** No ambient traffic, parked-vehicle, or pedestrian work in this milestone (existing trams, rival buses and stop queues stay as they are). Build everything **night-ready** though (emissive window/sign masks, §7), because a night variant is planned.
-12. **Check §3.1 before building anything.** There is reusable data, tools and CC0 content (notably the Hong Kong Lands Department 3D building models). Reuse it where the licence allows, and log every third-party item in `docs/ASSET_LICENSES.md`.
+12. **Check §3.1 before building anything.** There is reusable data, tools and CC0 content. The **Hong Kong Lands Department 3D building models are cleared for use by the owner** (licence is permissive; attribution required): use them to drive heights, massing and hero geometry, following the download etiquette in §3.2. Log every third-party item in `docs/ASSET_LICENSES.md`.
 
 ---
 
@@ -110,7 +110,7 @@ Licences below are from search results and listing pages, **not legal review**. 
 
 | Resource | What it is | How to use it | Caveats |
 |---|---|---|---|
-| **HK Lands Department 3D Visualisation Map — non-textured models** ([data.gov.hk dataset](https://data.gov.hk/en-data/dataset/hk-landsd-openmap-3d-visualisation-map-non-textured-models)) | Territory-wide 3D building, infrastructure and terrain geometry, offered as **glTF, FBX and MAX**. Part of the LandsD 3D Digital Map ([press release](https://www.news.gov.hk/eng/2024/06/20240628/20240628_141526_695.html), [2025 completion](https://news.gov.hk/eng/2025/03/20250327/20250327_141213_296.html)); downloads go through the [CSDI portal](https://portal.csdi.gov.hk/). The textured tile-based version ([Cesium 3D Tiles dataset](https://data.gov.hk/en-data/dataset/hk-landsd-openmap-3d-visualisation-map-tile-based-models)) also exists. | **Reference, not shipping art.** Clip to our bounds (centre 114.1515 E, 22.2858 N), then use it to (1) check building heights and roof shapes against `district.json` (OSM heights are tags or estimates), (2) get true massing for every hero in §6.4, (3) see set-backs and podium steps for tower blocks, (4) optionally derive per-lot heights for filler buildings. Import into Blender as a reference layer (`-noimp`, hidden at export). | Terms for this dataset not confirmed ⚠: general [data.gov.hk terms](https://data.gov.hk/en/terms-and-conditions) allow free commercial and non-commercial use **with attribution** and without resale, but the CSDI portal has its own terms. Read both. Do not use the *textured* tiles (photo-derived). Do not commit raw tiles (huge); commit only derived numbers (heights, set-back profiles) and attribution. Downloading needs the owner's OK (state file, source, size). |
+| **HK Lands Department 3D Visualisation Map** — [non-textured models](https://data.gov.hk/en-data/dataset/hk-landsd-openmap-3d-visualisation-map-non-textured-models) (**glTF, FBX, MAX**; building, infrastructure and terrain geometry) and [individualised models](https://data.gov.hk/en-data/dataset/hk-landsd-openmap-3d-visualisation-map-individualised-models) (landmark-quality models; MAX, FBX, DAE, glTF, KML per the listing ⚠ check which are textured) | Territory-wide surveyed 3D geometry, part of the LandsD 3D Digital Map ([press release](https://www.news.gov.hk/eng/2024/06/20240628/20240628_141526_695.html), [2025 completion](https://news.gov.hk/eng/2025/03/20250327/20250327_141213_296.html)). Downloads via the [CSDI portal](https://portal.csdi.gov.hk/); a streaming [3D Spatial Data API](https://portal.csdi.gov.hk/csdi-webpage/apidoc/3d-spatial-data-api) serves Cesium 3D Tiles; the data.gov.hk download API can select by LandsD 1:1000 map-sheet number and format. | **Owner-approved for use** (licence is permissive; keep attribution). Use it to: (1) replace OSM's estimated heights with surveyed ones for every building, (2) take real roof shapes, podium/tower steps and set-backs, (3) use the individualised/landmark models as the geometric base of heroes (§6.4) — simplify, re-topologise, UV and restyle them into our atlas rather than shipping raw high-poly meshes, (4) seed filler building massing (per-lot volumes) for the generator, (5) check street-canyon proportions against our road widths. Import into Blender as a source layer; export our own simplified, stylised GLBs. | Attribution to the Government/Lands Department and DATA.GOV.HK is required by the [data.gov.hk terms](https://data.gov.hk/en/terms-and-conditions) — add it to the README, the credits screen and `docs/ASSET_LICENSES.md`; do not strip attribution notices; no resale of the raw data. Do **not** ship the textured photo-derived tiles' textures. Follow §3.2 so we do not abuse the service. |
 | **OpenStreetMap** | Already imported (`tools/import_map.py`, `tools/map_source/sheung_wan.osm`). | Keep. Possible extra tags: `building:levels`, `roof:shape`, `building:colour`, `building:material` for filler variety. | ODbL attribution already in README. |
 
 **2. Blender-side tools**
@@ -145,7 +145,55 @@ Licences below are from search results and listing pages, **not legal review**. 
 
 **Not found:** no free, CC0, Sheung Wan–style tenement kit; no free HK-specific kit covering AC units, scaffolding, blade signs and shopfronts together. Plan to model the kit ourselves, using the reusable items above as inputs (geometry for checking, CC0 textures for baking, generic props for filling).
 
-**Reuse policy for Codex Astra.** (1) Prefer CC0 and our own work. (2) Anything needing attribution gets an in-game credits line and an entry in `docs/ASSET_LICENSES.md`. (3) No download of a large file or a paid asset without owner approval. (4) Never mix photo-derived textures into the atlas. (5) If a licence is unclear, treat it as reference-only.
+**Reuse policy for Codex Astra.** (1) Prefer CC0 and our own work. (2) Anything needing attribution gets an in-game credits line and an entry in `docs/ASSET_LICENSES.md`. (3) No paid asset without owner approval. Free open-data downloads that the owner has cleared (the Lands Department data) are fine, under the etiquette in §3.2. (4) Never mix photo-derived textures into the atlas. (5) If a licence is unclear, treat it as reference-only.
+
+### 3.2 Using the Lands Department data politely (do not abuse the service)
+
+The owner has cleared the licence and asked that we **not abuse the API**. The services are public infrastructure; treat them as such.
+
+1. **Download once, cache locally, never re-fetch.** Fetch only what the district needs (our bounds: `[-560,-330,560,330]` m around 114.1515 E, 22.2858 N, 0.8× projection; add ~200 m margin for context buildings — convert to lat/lon with `district.json`'s `projection`), not the territory. Prefer the **bulk download route** (CSDI portal / data.gov.hk download API, selecting by the 1:1000 map-sheet numbers covering Sheung Wan and western Central) over streaming tiles through the 3D API.
+2. **Cache in a git-ignored folder** `tools/map_source/landsd/` (add it to `.gitignore`; it already has a `.gdignore` neighbour so Godot ignores `tools/map_source/`). Record in `tools/map_source/landsd/SOURCE.md` the dataset URL, the exact files or sheet numbers, retrieval date, size and licence/attribution text. All later steps read from this cache. Commit only **derived** results (see 6).
+3. **Be gentle if you must hit an API:** one request at a time, a descriptive `User-Agent` that names the project and a contact address the owner supplies (don't invent one, and don't put the owner's personal details in it without asking), a pause of at least 1 s between requests, exponential back-off on any 429/5xx and stop after a few failures, honour `Retry-After`, and never loop or poll. No parallel or scripted crawling of tiles outside our bounding box. Dry-run first: compute and print the list of files/tiles and their total size before fetching anything, and tell the owner the count and size if it exceeds ~500 MB.
+4. **Be idempotent:** skip files that already exist with the same size/checksum; resumable downloads; no "re-download all" flag in the scripts.
+5. **State the total** (files, MB) in the Phase 0 note before and after downloading. If a request fails, report it; don't retry in a tight loop.
+6. **What goes into the repo:** the cleaned, simplified, restyled results (our GLBs and generator inputs such as `assets/map_data/landsd_heights.json`: per-footprint surveyed height, roof shape, podium/tower step profile), the importer/extractor scripts, and the attribution. **Not** the raw downloads and not any tiles' photo textures.
+7. **Attribution** (required by the data.gov.hk terms): add a line to the README geographic-attribution section, the in-game credits screen and `docs/ASSET_LICENSES.md`, naming the Lands Department / HKSAR Government as the source and DATA.GOV.HK as the portal, e.g. "3D building data: © Lands Department, HKSAR Government, via DATA.GOV.HK". Check the dataset page for the exact wording before using this one.
+
+**Practical workflow**
+
+1. Dry-run: list the sheets/tiles that intersect our bounds; show size.
+2. Download once into `tools/map_source/landsd/`.
+3. `tools/city/extract_landsd.py` (or a Blender script): clip to our bounds, match each OSM footprint in `district.json` to the nearest surveyed building by overlap, and write `assets/map_data/landsd_heights.json` (height, roof shape, step profile) plus per-hero source meshes in `tools/source/city/heroes/_landsd/` (git-ignored if large).
+4. Feed those numbers into the generator (§6.3) and use the hero meshes as the base for hand-modelling (§6.4).
+5. Add a test in `tests/test_city_blocks.gd`: surveyed height vs. built height within ±1.5 m for all named buildings.
+
+### 3.3 Trial download: what we actually got (2026-11-16)
+
+One sheet was downloaded to test usefulness (details and checksum in `tools/map_source/landsd/SOURCE.md`; licence logged in `docs/ASSET_LICENSES.md`).
+
+**Download route that works** (replaces guesswork in §3.2): per-sheet zips at `https://download.map.gov.hk/api/3d-zip/GLTF0/<SHEETNO>.zip` (`GLTF0` = non-textured glTF; `FBX0`/`MAX0` also exist; without the `0` it is the individualised product). The sheet numbers and polygons come from LandsD's own sheet index (a GeoJSON; a mirror is in [Dorian1729/3D-Visualisation-Map](https://github.com/Dorian1729/3D-Visualisation-Map), third party), and the URLs in that index carry a public key. The portal's *3D Spatial Data API* (Cesium 3D Tiles) needs a free key requested from `3dmap@landsd.gov.hk`; we do not need it. The server is slow (≈70 KB/s here) but supports HTTP `Range`, so resume with `curl -C -` rather than restarting.
+
+**Which sheets we need.** Sheet `11-SW-8A` (53 MB) covers the **western half of the game map** (game x −418…64, z −300…80): Western Market, Bonham Strand, Dried Seafood Street, much of the waterfront. The eastern half and the Hollywood/Man Mo/PMQ hills are in neighbouring sheets: find them by intersecting the game bounds with the index polygons, and fetch them one at a time (expect roughly 3–5 sheets, a few hundred MB), only when the phase that needs them starts.
+
+**What is in it.** 762 buildings, one glTF each, 376k triangles total (median 249 tris, max 19.6k; the 10 heaviest hold 24 % of all triangles; 23 buildings exceed 2,000 tris). Heights: 493 below 30 m, 112 at 30–60 m, 130 at 60–100 m, 27 above 100 m (max 166 m). Positions are in HK1980 Grid; `tools/city/landsd_index.py` converts them to game coordinates and writes `assets/map_data/landsd_11-SW-8A_index.json` (id, x, z, ground, height, tris, file). The conversion was validated against OSM footprints: median offset about 0.5–1 m, so overlaying is reliable.
+
+**Quality (see `captures/landsd/westernmkt_top.png` and `westernmkt_oblique.png`, Blender Workbench renders of the raw data around Western Market).** Far better massing than OSM extrusions: real podium/tower steps, set-backs, pitched roofs, colonnades with columns, recessed window bands on some towers, plant rooms and parapets. It is **untextured geometry with one material and a vertex colour**, no balconies, AC units, signs or shopfronts. Hence it solves silhouette and heights, not facade detail.
+
+**Does it help? Yes, with limits:**
+- **Heights.** A crude centroid match (within 6 m, 143 pairs) of our current building heights against surveyed ones showed almost no correlation (r ≈ 0.05; 62 % differ by more than 10 m; surveyed median 25 m vs. our 33 m). The match is crude (our footprints are clipped parts), so redo it by polygon overlap, but it strongly suggests our OSM-derived heights are largely wrong and the skyline is too tall. Replacing them is the cheapest big win.
+- **Massing/roofs for filler.** Use surveyed per-building volumes (and their steps/roofs) as the generator's base mass, then add lots, facades and clutter on top (§6.3).
+- **Heroes.** A very good starting mesh (e.g. the ~13k-triangle complex next to Western Market). Not shippable as is.
+
+**It must be simplified before use** (owner's expectation confirmed):
+1. Many buildings are fine as they are (median 249 tris); the **23 buildings above ~2,000 tris** (podium complexes, malls, multi-storey car parks) need decimation or rebuilding with our kit.
+2. All meshes have per-vertex colour and a single default material: **replace the material** with our atlas/toon material, drop `COLOR_0`, add UVs for the atlas (box-project walls, per-floor repeat).
+3. Heights are in metres but our horizontal projection is **0.8×**: scale x/z by 0.8 (and keep y), as `landsd_index.py` and the Blender preview did, or tall towers look too thin/short relative to streets.
+4. The models sit at the surveyed ground height; our terrain is smoothed (`D.road_height`). Snap each building's base to the game terrain and add a foundation skirt (§6.2).
+5. Roads, pavements and trees in `INFRASTRUCTURE`/`TERRAIN` are not needed; ignore them (the terrain tile is 52 MB of the 103 MB).
+6. Buildings are cut per footprint, so adjacent buildings may overlap or leave gaps; clip against our road corridor as `tools/import_map.py` does, so nothing intrudes on roads (re-use the Hollywood regression test).
+7. Combine many small buildings into **one mesh per street block** after simplification (§4), to keep node and draw-call counts down.
+
+**Next step for Codex Astra (Phase 0 addition):** write `tools/city/landsd_to_blender.py` that imports the buildings of one block from the cache, scales/positions them as above, and replaces the material; compare against OSM footprints and heights; produce the first simplified block mesh for stop 5 (Bonham Strand).
 
 ---
 
@@ -259,7 +307,7 @@ The owner asked for **more heroes** (2026-11-16). Hero list, in build order. Tie
 **Tier C — skyline silhouettes (far LOD only, < 2k tris):**
 - **The Center** (346 m crown), **IFC**, **Exchange Square**, **China Merchants Tower**, **Man Yee / Midland Plaza** and other towers taller than ~100 m.
 
-Use the Lands Department 3D model (§3.1) to check massing, height and roof shape of every hero before modelling it. Do not copy its geometry unmodified into shipped assets until the licence has been confirmed.
+Use the Lands Department 3D data (§3.1, §3.2) as the geometric base for every hero in §6.4: extract the building from the downloaded data, clean and simplify it in Blender, then add our stylised detail, UVs and atlas. Check massing, height and roof shape against it before finishing each hero.
 
 ### 6.5 Export checklist (glTF, per Blender/Godot docs)
 
@@ -376,7 +424,7 @@ Each phase ends with: green checks, updated captures, a short note appended to `
 | 5 | Traffic / pedestrians | **Out of scope.** This milestone is static buildings and street blocks only (rule 11). |
 | 6 | Renderer | **Not `gl_compatibility`.** Forward+ (§7.1). |
 
-Still open (ask the owner when you reach them, don't guess): (a) the final art direction after the Phase 0 A/B; (b) whether to buy any paid HK-specific kit listed in §3.1 (needs owner approval and licence review); (c) permission to download the Lands Department models (§3.1) — they are large, so state the file, source and size before downloading.
+Still open (ask the owner when you reach them, don't guess): (a) the final art direction after the Phase 0 A/B; (b) whether to buy any paid HK-specific kit listed in §3.1 (needs owner approval and licence review).
 
 ---
 

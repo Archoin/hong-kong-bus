@@ -4,3 +4,7 @@
 captures/*
 !captures/.gdignore
 builds/
+
+# Third-party raw downloads (Lands Department 3D data); see tools/map_source/landsd/SOURCE.md
+tools/map_source/landsd/raw/
+tools/map_source/landsd/extracted/
