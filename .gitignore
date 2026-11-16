@@ -5,6 +5,6 @@ captures/*
 !captures/.gdignore
 builds/
 
-# Third-party raw downloads (Lands Department 3D data); see tools/map_source/landsd/SOURCE.md
-tools/map_source/landsd/raw/
+# Lands Department 3D data: the zips in tools/map_source/landsd/raw/ are tracked with Git LFS;
+# extracted copies are re-creatable (python3 -I tools/city/landsd_index.py <SHEET>) and not tracked.
 tools/map_source/landsd/extracted/

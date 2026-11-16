@@ -19,8 +19,10 @@ Dataset: https://data.gov.hk/en-data/dataset/hk-landsd-openmap-3d-visualisation-
 | Revision | server `Last-Modified: Tue, 07 Jul 2026`; index REVISIONDATE 20260717 |
 | Requests made | 1 HEAD + 1 GET (interrupted by client timeout at 22 MB) + 1 resumed GET using HTTP Range. Server speed was ~70 KB/s. No other requests to the data servers. |
 
-Raw zip and extracted files are git-ignored (`tools/map_source/landsd/raw/`, `.../extracted/`). To
-reproduce, fetch the sheet once with a resumable client (`curl -C -`), a descriptive User-Agent and no
+The raw zip is **tracked in the repository with Git LFS** (`tools/map_source/landsd/raw/11-SW-8A_GLTF0.zip`; run
+`git lfs pull` after cloning). The extracted copy (`tools/map_source/landsd/extracted/`) is git-ignored and is
+re-created from the zip by `python3 -I tools/city/landsd_index.py 11-SW-8A`. Further sheets follow the same
+pattern: download once, add the zip under `raw/`. To fetch a new sheet, use with a resumable client (`curl -C -`), a descriptive User-Agent and no
 parallel requests. Do not re-download if the zip exists and its SHA-256 matches.
 
 ## Contents of the sheet

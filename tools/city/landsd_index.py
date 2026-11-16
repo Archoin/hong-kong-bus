@@ -9,7 +9,7 @@ assets/map_data/landsd_<SHEET>_index.json.
 Usage: python3 -I tools/city/landsd_index.py 11-SW-8A
 Data (c) Lands Department, HKSAR Government, via DATA.GOV.HK. See tools/map_source/landsd/SOURCE.md.
 """
-import glob, json, math, os, sys
+import glob, hashlib, json, math, os, sys, zipfile
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 # HK1980 Grid (EPSG:2326): transverse Mercator, International 1924 ellipsoid.
@@ -58,7 +58,22 @@ def to_game(lat, lon, proj):
             -(lat - proj["origin"][1]) * proj["z_m_per_deg"] * proj["scale"])
 
 
+def ensure_extracted(sheet):
+    """Unzip tools/map_source/landsd/raw/<sheet>_GLTF0.zip (tracked in Git LFS) if not yet extracted."""
+    out = os.path.join(ROOT, "tools/map_source/landsd/extracted", sheet)
+    if os.path.isdir(os.path.join(out, "BUILDING")):
+        return
+    zip_path = os.path.join(ROOT, "tools/map_source/landsd/raw", sheet + "_GLTF0.zip")
+    if not os.path.exists(zip_path) or os.path.getsize(zip_path) < 1000:
+        sys.exit("Missing or LFS-pointer zip %s: run `git lfs pull`" % zip_path)
+    os.makedirs(out, exist_ok=True)
+    with zipfile.ZipFile(zip_path) as z:
+        z.extractall(out)      # zipfile rejects path traversal
+    print("extracted", zip_path, "->", out)
+
+
 def main(sheet):
+    ensure_extracted(sheet)
     district = json.load(open(os.path.join(ROOT, "assets/map_data/district.json")))
     proj = district["projection"]
     base = os.path.join(ROOT, "tools/map_source/landsd/extracted", sheet, "BUILDING")

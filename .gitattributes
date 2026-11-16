@@ -1,0 +1,6 @@
+# Large binary assets live in Git LFS (owner approved 2026-11-16; see docs/CITY_BUILD_GUIDE.md section 6.1).
+tools/map_source/landsd/raw/*.zip filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
+assets/city/**/*.glb filter=lfs diff=lfs merge=lfs -text
+assets/city/**/*.png filter=lfs diff=lfs merge=lfs -text
+tools/source/city/**/*.glb filter=lfs diff=lfs merge=lfs -text
