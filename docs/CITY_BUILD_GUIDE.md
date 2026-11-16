@@ -19,6 +19,8 @@
 8. **Compare every iteration against real photos** (§2 list) using the repeatable camera shots in `tools/capture_map.gd`. "Looks better" is not evidence; a side-by-side is.
 9. **Stylised, not photoreal.** Keep the project's flat, three-band toon look and warm/teal palette, but with *real proportions and real clutter*. The goal is "illustrated Hong Kong", not "low-effort boxes" and not "photo textures".
 10. **Do not ship third-party photos or Google/Cesium data.** Reference images are for looking at only. Generated textures must be original or CC0. See §5.
+11. **Milestone scope: static buildings and street blocks only.** No ambient traffic, parked-vehicle, or pedestrian work in this milestone (existing trams, rival buses and stop queues stay as they are). Build everything **night-ready** though (emissive window/sign masks, §7), because a night variant is planned.
+12. **Check §3.1 before building anything.** There is reusable data, tools and CC0 content (notably the Hong Kong Lands Department 3D building models). Reuse it where the licence allows, and log every third-party item in `docs/ASSET_LICENSES.md`.
 
 ---
 
@@ -35,7 +37,7 @@ Real references (all Wikimedia Commons, CC-licensed, linked in §2): Des Voeux R
 | 4 | **Colour** | Painted ochre/orange, mint green, maroon/purple, white, grey tile, mosaics — saturated and varied per building. | 8 pale, similar greys/creams + teal glass, further washed by fog and a linear tonemap. Whole image is pastel teal. | **High** |
 | 5 | **Ground floor / shopfronts** | Deep, layered: roller shutters, glass with goods visible, awnings/canopies, **huge red/gold fascia signs**, goods spilling onto the pavement (dried seafood on Wing Lok / Des Voeux West), hydrants, bins, bollards. | A dark recessed strip with thin columns, a coloured band and a slim awning. Reads as a placeholder. | **High** |
 | 6 | **Signage** | Dense **vertical blade signs** projecting across the street at 2nd–4th floor, lightboxes, green/blue street-name plates, road signs, bilingual text. | A handful of blade signs, text via `Label3D` (flat, small). | **High** |
-| 7 | **Street life & props** | Parked vans/taxis/scooters, double-decker trams with full ad wraps, **pedestrian guardrails**, traffic-light poles, zebra crossings, trees in planters, overhead tram wires. | Empty roads; a few trams; stop shelters and street lamps only. No cars, no pedestrians (except queues), no guardrails or traffic lights. | **High** |
+| 7 | **Street life & props** | Parked vans/taxis/scooters, double-decker trams with full ad wraps, **pedestrian guardrails**, traffic-light poles, zebra crossings, trees in planters, overhead tram wires. | Empty roads; a few trams; stop shelters and street lamps only. No cars, no pedestrians (except queues), no guardrails or traffic lights. | **High** (vehicles/pedestrians out of scope this milestone; guardrails, signals, signs, trees are in scope) |
 | 8 | **Street proportions** | Bonham Strand ≈ 2 narrow lanes with pavement; Des Voeux ≈ tram track + 2 lanes each way. Buildings feel *close*. | Roads 11.5–26 m wide (`build_city.gd` also paints a pavement strip `width + 3.8 m`); plenty of unused flat asphalt and plain featureless verge. Streets feel wide and empty. | Medium |
 | 9 | **Pavements & ground** | Red-brick/grey paver pavements, kerb lines, ramps, tactile strips, manholes, double-yellow lines. | Plain cream flat verge; yellow lines exist (good). | Medium |
 | 10 | **Hero landmarks** | Western Market: red-brick Edwardian with cream bands, turret, arched openings. Man Mo Temple: grey brick, green-tile pitched roofs with ridge ornaments, incense coils, lanterns. | Western Market is a box with strips; Man Mo is a cream box with a red door (`captures/map_manmo.png`). | **High** (landmarks anchor stops 1, 8, 10) |
@@ -55,7 +57,7 @@ Real references (all Wikimedia Commons, CC-licensed, linked in §2): Des Voeux R
 5. Blade signs and lightboxes crossing the street; real bilingual lettering.
 6. Pedestrian guardrails, traffic lights, road signs, bins, hydrants, bollards, trees in planters.
 7. Bamboo scaffolding with green/black netting (on ~1 in 15 buildings).
-8. Parked/standing vehicles (vans, taxis, scooters, a few buses), pedestrians.
+8. ~~Parked/standing vehicles, pedestrians~~ — **out of scope for this milestone** (owner decision, 2026-11-16). Leave kerb-side space and pavement widths realistic so they can be added later.
 9. Pavement materials: brick paver, kerb, tactile strip, manholes.
 10. Hero landmarks (Western Market, Man Mo Temple, PMQ, Central Market, Sheung Wan Municipal Services Building, Macau Ferry Terminal / Shun Tak, The Center / IFC skyline).
 
@@ -100,6 +102,51 @@ Research performed 2026-11-16. Sources linked inline; treat vendor pages as mark
 
 **Verdict.** Approach **E** (hero + filler) built with **C** (our own Blender kit and generator) and **I/J** (flat-colour kit + shared atlas), keeping **A**'s road/terrain/collision. This is also your preference: author buildings and street blocks in Blender, instance them in Godot.
 
+### 3.1 What can be reused (background research, 2026-11-16)
+
+Licences below are from search results and listing pages, **not legal review**. Verify on the source page before shipping anything, and record each item in `docs/ASSET_LICENSES.md` (source URL, licence, date checked, what was changed, attribution text). Anything unverified is marked ⚠.
+
+**1. Real Hong Kong building geometry — the most valuable find**
+
+| Resource | What it is | How to use it | Caveats |
+|---|---|---|---|
+| **HK Lands Department 3D Visualisation Map — non-textured models** ([data.gov.hk dataset](https://data.gov.hk/en-data/dataset/hk-landsd-openmap-3d-visualisation-map-non-textured-models)) | Territory-wide 3D building, infrastructure and terrain geometry, offered as **glTF, FBX and MAX**. Part of the LandsD 3D Digital Map ([press release](https://www.news.gov.hk/eng/2024/06/20240628/20240628_141526_695.html), [2025 completion](https://news.gov.hk/eng/2025/03/20250327/20250327_141213_296.html)); downloads go through the [CSDI portal](https://portal.csdi.gov.hk/). The textured tile-based version ([Cesium 3D Tiles dataset](https://data.gov.hk/en-data/dataset/hk-landsd-openmap-3d-visualisation-map-tile-based-models)) also exists. | **Reference, not shipping art.** Clip to our bounds (centre 114.1515 E, 22.2858 N), then use it to (1) check building heights and roof shapes against `district.json` (OSM heights are tags or estimates), (2) get true massing for every hero in §6.4, (3) see set-backs and podium steps for tower blocks, (4) optionally derive per-lot heights for filler buildings. Import into Blender as a reference layer (`-noimp`, hidden at export). | Terms for this dataset not confirmed ⚠: general [data.gov.hk terms](https://data.gov.hk/en/terms-and-conditions) allow free commercial and non-commercial use **with attribution** and without resale, but the CSDI portal has its own terms. Read both. Do not use the *textured* tiles (photo-derived). Do not commit raw tiles (huge); commit only derived numbers (heights, set-back profiles) and attribution. Downloading needs the owner's OK (state file, source, size). |
+| **OpenStreetMap** | Already imported (`tools/import_map.py`, `tools/map_source/sheung_wan.osm`). | Keep. Possible extra tags: `building:levels`, `roof:shape`, `building:colour`, `building:material` for filler variety. | ODbL attribution already in README. |
+
+**2. Blender-side tools**
+
+| Tool | Notes | Verdict |
+|---|---|---|
+| [Blosm](https://github.com/vvoovv/blosm) (source on GitHub; free + paid tiers) | OSM/terrain importer; free tier untextured; slow with tens of thousands of objects ([thread](https://blenderartists.org/t/blosm-import-of-google-3d-cities-openstreetmap-terrain/608089)). Licence ⚠ check repo. | Optional pre-visualisation; not needed, we already have footprints. |
+| [Buildify](https://paveloliva.gumroad.com/l/buildify) ([CGChannel](https://www.cgchannel.com/2022/07/download-free-blender-3d-building-generator-buildify/)) | Free (pay-what-you-want) Geometry Nodes modular-building library; announced for Blender 3.2; works with Blosm footprints. Licence ⚠, compatibility with Blender 5.2 ⚠. | **Study its node design** for our generator; probably not usable as-is. |
+| [Auto-Building](https://auto-building.readthedocs.io/) | Add-on that fills tagged faces of a low-poly mass with walls, windows, trims and roofs from collections you model. Licence ⚠, Blender 5.x support ⚠. | **Best architectural reference** for our "kit collections + generator" (§6.3). Try it on one block before deciding to write our own. |
+| Paid: [Pro City – Hong Kong](https://superhivemarket.com/products/pro-city-hong-kong/docs), [MBG](https://superhivemarket.com/products/mbg-building-geometry-nodes), [Urban Forge](https://superhivemarket.com/products/urbanforge/docs), [CityMaker](https://superhivemarket.com/products/citymaker) | Commercial generators. Urban Forge and CityMaker list a GPL licence ⚠. | Don't buy without owner approval. Generated geometry is normally not covered by an add-on's licence, but confirm per product. |
+| [CityShip thread](https://blenderartists.org/t/cityship-a-city-exports-as-one-giant-file-so-i-made-it-split-into-zones-that-snap-back-together/1652332) | Someone solved "a city exports as one giant file" by splitting into zones that snap back together. | Same problem as our block export; read for ideas. |
+
+**3. Godot-side tools**
+
+| Tool | Notes | Verdict |
+|---|---|---|
+| [CityCrafter3D](https://github.com/immaculate-lift-studio/CityCrafter3D) (MIT per its listing ⚠) | Slot/grid-based city generator for Godot 4. | Grid-based and generic, wrong fit for OSM footprints. Skim its assembly code only. |
+| [Godot Road Generator](https://github.com/TheDuckCow/godot-road-generator) (MIT) | Road meshes. | Not needed; roads are already built and tested. |
+| [Gaea](https://awesome.ecosyste.ms/projects/github.com%2Fgaea-godot%2Fgaea) | General procedural-generation add-on. | Not needed. |
+
+**4. Content (textures, props)**
+
+| Source | Licence | Use |
+|---|---|---|
+| [Poly Haven](https://polyhaven.com/license) textures/models | CC0 (per [FAQ](https://polyhaven.com/faq)) | **Source material to bake into our stylised atlases** (concrete, ceramic tile, brick, shutter metal, asphalt). Check each asset page. |
+| [ambientCG](https://ambientcg.com/) | CC0 (per third-party guides ⚠, confirm on site) | Same as above; larger material catalogue. |
+| [Quaternius LowPoly Modular Street](https://quaternius.itch.io/lowpoly-modular-street) | CC0, FBX/OBJ/Blend | Generic street props (bins, bollards, lamp posts) if contents suit; restyle to our palette. HK-specific pieces (guardrails, signals, AC units) are modelled by us. |
+| [Kenney assets](https://kenney.nl/assets/city-kit-roads) / [Retro Urban Kit](https://opengameart.org/content/retro-urban-kit) | CC0 | Generic props only; rejected before for roads. |
+| [Free Blender neon sign pack (RenderHub)](https://www.renderhub.com/magiccgistudios/glow-neon-sign-asset-pack) | Licence ⚠ | Study; our signs are bilingual HK blade signs we generate. |
+| Paid HK kits: Fab ["Hong Kong Old Tenement Building"](https://www.fab.com/listings/67c374cb-ef9e-413c-a812-ea287fdc8720) (FBX/OBJ/BLEND, licence ⚠), CGTrader [HK-style building pack with AC units and neon](https://www.cgtrader.com/3d-models/exterior/street-exterior/japanese-hong-kong-styled-building-pack) (royalty-free, ~$4.49), CGTrader [HK neon sign bundles](https://www.cgtrader.com/3d-models/exterior/other/hong-kong-neon-sign-v05-bundle) | Royalty-free, **not CC0** | **Reference only** unless the owner approves a purchase. Do not use the "free for evaluation only" Unity HK city pack. Do not import photo-derived textures. |
+| Art breakdowns: [Lucky Mountain HK street](https://sketchfab.com/blogs/community/art-spotlight-lucky-mountain-games-environment-prototype), [Kowloon back alley](https://80.lv/articles/kowloon-beauty-of-the-back-alley/), Polycount [Hong Kong threads](https://polycount.com/discussions/tagged/hong-kong) | Copyrighted | Learn from, do not copy. |
+
+**Not found:** no free, CC0, Sheung Wan–style tenement kit; no free HK-specific kit covering AC units, scaffolding, blade signs and shopfronts together. Plan to model the kit ourselves, using the reusable items above as inputs (geometry for checking, CC0 textures for baking, generic props for filling).
+
+**Reuse policy for Codex Astra.** (1) Prefer CC0 and our own work. (2) Anything needing attribution gets an in-game credits line and an entry in `docs/ASSET_LICENSES.md`. (3) No download of a large file or a paid asset without owner approval. (4) Never mix photo-derived textures into the atlas. (5) If a licence is unclear, treat it as reference-only.
+
 ---
 
 ## 4. Target architecture
@@ -143,7 +190,7 @@ Research performed 2026-11-16. Sources linked inline; treat vendor pages as mark
 
 ## 5. Art direction and rules
 
-- **Style:** stylised, flat colour with the existing 3-band toon lighting; real proportions and clutter. Silhouette first; texture detail second.
+- **Style (owner: undecided, working default for now):** stylised toon with real proportions and clutter — flat colour with the existing 3-band toon lighting. Silhouette first; texture detail second. **Because the final look is undecided, keep geometry and look separable:** buildings export geometry + UV layout + vertex colour only; the *look* lives in a material/atlas that can be swapped without re-exporting blocks. Phase 0 must therefore show **two looks of the same block** (A: flat toon atlas; B: more painterly/realistic atlas, still original or CC0 textures, still the same Forward+ shader pipeline) so the owner can choose.
 - **Palette:** pull from the photos — ochre/orange, mint/jade green, maroon, off-white, grey ceramic tile, teal glass. At least **8 body colours** and **6 accent colours** (shop fascias, awnings). Stop the pastel teal wash: reduce fog density, lower ambient, raise sun contrast.
 - **Texture sources:** original or CC0 only. Paint your own trim sheet/atlas in Blender (procedural bake) or by hand. No photograph texture goes into the repo.
 - **Text:** shop signs are real bilingual Chinese + English (existing `SHOPS`/`ENGLISH` lists in `build_city.gd` are a good start; add ~40 more). Prefer text baked into the sign atlas or small meshes; do not use hundreds of `Label3D`s.
@@ -158,7 +205,8 @@ Research performed 2026-11-16. Sources linked inline; treat vendor pages as mark
 
 - Blender **5.2.2 LTS** at `/Applications/Blender.app/Contents/MacOS/Blender` (run `--background --python`). Godot **4.6.1** at `/Applications/Godot.app/Contents/MacOS/Godot`.
 - Source files: `tools/source/city/kit.blend` (kit), `tools/source/city/heroes/<name>.blend`, `tools/source/city/blocks/block_*.blend` (optional hand-polished blocks).
-- Keep `.blend1` out of git (already ignored). Large `.glb` outputs: expect 60–120 blocks × 0.5–3 MB. Ask the owner before enabling Git LFS if the total exceeds ~150 MB.
+- Keep `.blend1` out of git (already ignored). Large `.glb` outputs: expect 60–120 blocks × 0.5–3 MB.
+- **Git LFS is approved.** Set it up in Phase 0, before the first binary asset is committed: `git lfs install`, then a `.gitattributes` tracking at least `*.blend`, `*.glb`, and large texture atlases (`assets/city/**/*.png`). Do not rewrite existing history; only new binaries go to LFS. Check whether the owner's `git lfs` is installed (`git lfs version`) and tell them to `brew install git-lfs` if not. Keep `.import` files and small scripts as normal git objects. Do not track the old 41 MB `scenes/district.tscn` in LFS; it is being replaced.
 
 ### 6.2 Scale, axes, origin
 
@@ -194,11 +242,24 @@ Use Geometry Nodes or plain Python `bpy` — whichever is easier to keep determi
 
 Build each in its own `.blend`, ~3–15k triangles, one atlas, with LOD1 (~25 %) authored or decimated. Footprints and approximate height come from `district.json` (`landmarks` and named buildings). Priority:
 
+The owner asked for **more heroes** (2026-11-16). Hero list, in build order. Tier A are stop landmarks and drive the first screenshots; B and C are named in `district.json` and must be located there first (query `buildings[].name`; check each is inside the 1,120 × 660 m bounds and note its footprint/height).
+
+**Tier A — stop landmarks (full hand-modelled, LOD0 + LOD1):**
 1. **Western Market** (stop 1) — red-brick Edwardian, cream string courses, arched openings, corner turret, lettering.
 2. **Man Mo Temple + Lit Shing Kung** (stop 8) — grey brick, green-tile pitched roofs with ridge ornaments, red doors, lanterns, incense coils, courtyard.
-3. **Central Market** (stop 10) and **PMQ** (stop 9) — recognisable massing and balconies.
-4. **Sheung Wan Municipal Services Building**, **Macau Ferry Terminal / Shun Tak twin towers**.
-5. Skyline: **The Center** (346 m crown), **IFC**, **Exchange Square** — silhouettes only, far LOD.
+3. **Central Market** (stop 10) and **PMQ** (stop 9) — recognisable massing, balconies, courtyards.
+4. **Sheung Wan Municipal Services Building** (market + complex, near stop 12) and **Sheung Wan MTR station entrance/vent shaft** (stop 12).
+5. **Macau Ferry Terminal / Shun Tak Centre twin towers** (stop 2).
+6. **Hollywood Road Park pavilions and gate** (stop 6) and **Dried Seafood Street** corner buildings (stop 4, hand-polished tenement block rather than a landmark).
+
+**Tier B — recognisable street-level buildings (hand-modelled, simpler, ~3–8k tris):**
+- **Sheung Wan Fire Station**, **Ying Wa Girls' School**, **Rumsey Street Multi-Storey Car Park** (distinctive open-deck facade), **Wing On Centre**, **Cosco Tower**, **Hang Seng Bank Headquarters**, **Infinitus Plaza**.
+- Any other named building in `district.json` that sits on a bus route or next to a stop (`D.STOP_POS`) and has a distinctive silhouette. Propose additions to the owner with a screenshot before modelling.
+
+**Tier C — skyline silhouettes (far LOD only, < 2k tris):**
+- **The Center** (346 m crown), **IFC**, **Exchange Square**, **China Merchants Tower**, **Man Yee / Midland Plaza** and other towers taller than ~100 m.
+
+Use the Lands Department 3D model (§3.1) to check massing, height and roof shape of every hero before modelling it. Do not copy its geometry unmodified into shipped assets until the licence has been confirmed.
 
 ### 6.5 Export checklist (glTF, per Blender/Godot docs)
 
@@ -252,7 +313,7 @@ Rules:
 - **Occlusion.** One `OccluderInstance3D` per block with a simple box/prism occluder built from the footprints (Godot's [3D optimisation docs](https://docs.godotengine.org/en/4.4/tutorials/performance/optimizing_3d_performance.html) recommend occluders when streets are blocked by walls; dense tall city blocks suit this well).
 - **Instancing.** Repeated props (lamps, guardrails, bins, planters, trees, vehicles) use `MultiMeshInstance3D` per block; the doc notes automatic instancing only helps opaque/alpha-tested identical mesh+material and that alpha-blended items never batch.
 - **Shadows.** Directional-light shadows multiply draw calls ([forum report](https://forum.godotengine.org/t/understanding-batching-in-godot-4/65635)). Keep `directional_shadow_max_distance` modest (≈160–220 m); consider orthogonal shadow mode.
-- **Materials.** Reuse the toon look. Convert `assets/shaders/facade.gdshader` into an *atlas toon* shader (albedo atlas + vertex colour + three-band light); keep a `glass` variant. Add a night/emissive window mask if the game later gets night.
+- **Materials.** Reuse the toon look. Convert `assets/shaders/facade.gdshader` into an *atlas toon* shader (albedo atlas + vertex colour + three-band light); keep a `glass` variant. **A night variant is planned (owner: yes), so build night-ready now:** the atlas has an emissive-mask channel (windows, shop interiors, lightboxes, neon-style signs; a separate material slot for signs so they can glow independently), per-window variation so lit/unlit windows are not uniform, and lamp posts as separate nodes ready for a few real `OmniLight3D`/`SpotLight3D`s near the camera (not hundreds). Provide a `day` and a `night` `Environment` preset (sky, ambient, fog, glow, sun/moon energy) and have `assemble_city.gd` switch between them. Verify both on the Phase 0 block. Shader parameters, not duplicate meshes, select day/night.
 - **Lighting (Forward+).** Start with a dynamic sun plus `Sky` ambient, no baked GI. Tune tonemap (Filmic/ACES), reduce `fog_density`, add a procedural sky gradient, raise sun/ambient contrast so shadows between buildings read. Then evaluate, one at a time and only if frame time allows: SSAO (contact shadow in canyons and under awnings), SSIL, glow for lightboxes/signs, SDFGI (bounce light in street canyons; test it on the 1,120 × 660 m map and with `cull_mask`/cascade settings), volumetric fog for harbour haze. Keep each feature that earns its cost in the capture comparison; drop the rest. Stay with a single `DirectionalLight3D` for shadows.
 - **Anti-aliasing.** `msaa_3d=2` is set today; test MSAA vs. TAA/FSR2 in Forward+ on thin features (railings, wires, blade signs) and pick by capture.
 - **Streaming (later, only if needed).** If memory or load time bites, load blocks by distance from the bus with `ResourceLoader.load_threaded_request`. Don't start here: 60–120 blocks fits in memory.
@@ -278,15 +339,15 @@ Report failures honestly; don't claim a result you did not measure.
 ## 9. Phased plan with stop-gates
 
 **Phase 0 — renderer migration + one-block vertical slice (≈ first deliverable).**
-First migrate to Forward+ (§7.1) and show the before/after captures of the *existing* city, so renderer changes are not confused with art changes. Then choose the **Bonham Strand stop (stop 5)** block plus the cross street toward Wing Lok. Build `kit.blend` with the minimum kit (2 facade families, 6 shopfront types, 10 props), the generator for that block, export, `assemble_city.gd`, drive past it in-game. Deliver the side-by-side with the Bonham Strand photos and the numbers from §8. **STOP: owner reviews and approves art direction before Phase 1.**
+First migrate to Forward+ (§7.1) and show the before/after captures of the *existing* city, so renderer changes are not confused with art changes. Then choose the **Bonham Strand stop (stop 5)** block plus the cross street toward Wing Lok. Build `kit.blend` with the minimum kit (2 facade families, 6 shopfront types, 10 props), the generator for that block, export, `assemble_city.gd`, drive past it in-game. Render it in **both looks (A toon / B painterly, §5) and in day and night**. Deliver the side-by-side with the Bonham Strand photos and the numbers from §8. **STOP: owner reviews and picks the art direction before Phase 1.** Also in Phase 0: Git LFS setup (§6.1), `docs/ASSET_LICENSES.md`, and a Lands Department data check for the hero buildings in this block (§3.1).
 
 **Phase 1 — corridor.** Generate blocks along Des Voeux Road Central → Bonham → Wing Lok → Des Voeux West (stops 1, 4, 5, 10, 12). Add tram-corridor props (wires/poles exist; add traffic lights, guardrails, crossings). Remove procedural buildings in those blocks from the old scene.
 
-**Phase 2 — heroes.** Western Market, Man Mo Temple, Central Market, PMQ, municipal building. Verify with stop screenshots.
+**Phase 2 — heroes.** Tier A (§6.4) first, with stop screenshots after each; then Tier B; Tier C silhouettes in Phase 4. Each hero is verified against Lands Department massing and the reference photos.
 
 **Phase 3 — whole district.** Hollywood/Cat Street/SoHo hill blocks (set-back stepping on slopes), waterfront blocks, ferry terminal. Delete the legacy `building()` path once all blocks exist.
 
-**Phase 4 — life and atmosphere.** Parked vehicles and scooters (MultiMesh), pedestrians along pavements, trees, bamboo scaffolding on selected buildings, far Mid-Levels hillside backdrop (billboard/low-poly mass), Kowloon skyline silhouettes, new sky/fog/light grade.
+**Phase 4 — atmosphere and static dressing.** Trees and planters, bamboo scaffolding on selected buildings, Tier C skyline silhouettes, far Mid-Levels hillside backdrop (low-poly mass), Kowloon skyline, new day sky/fog/light grade and the **night preset** (§7). **No vehicles or pedestrians in this milestone.**
 
 **Phase 5 — optimise and polish.** LOD tuning, occluder tuning, draw call pass, 60 fps in the standalone build, regenerate `scenes/district.tscn` without buildings, update README/MAP_DESIGN/VALIDATION.
 
@@ -304,13 +365,18 @@ Each phase ends with: green checks, updated captures, a short note appended to `
 - Don't regenerate the city with `--headless` Godot (MultiMesh transform buffers are lost; documented in MAP_DESIGN.md).
 - Don't leave a pipeline that only works by hand: every asset must be rebuildable from scripts and sources committed in the repo.
 
-## 11. Open questions for the owner
+## 11. Owner decisions (2026-11-16) and remaining open items
 
-1. **Art direction confirmation:** "stylised toon with real proportions/clutter" (assumed here) vs. more realistic painterly textures.
-2. **Scope of heroes:** is the list in §6.4 right, or should Cosco/Sheung Wan Station area or Hollywood Road landmarks get heroes too?
-3. **Night time:** will there be a night variant? It changes whether windows/signs need emissive layers from day one.
-4. **Git LFS:** acceptable for GLB/blend files if the repo grows beyond ~150 MB?
-5. **Traffic and pedestrians:** are ambient cars/pedestrians in scope for this milestone or a later one?
+| # | Question | Decision |
+|---|---|---|
+| 1 | Art direction | **Undecided.** Working default: stylised toon with real proportions. Phase 0 shows toon (A) vs. painterly (B); owner picks (§5, §9). Keep look swappable. |
+| 2 | Hero scope | **More heroes.** Tiered list in §6.4 (A stop landmarks, B street-level named buildings, C skyline). |
+| 3 | Night variant | **Yes.** Build emissive masks, separate sign materials, day/night presets from Phase 0 (§7). |
+| 4 | Git LFS | **Yes.** Set up in Phase 0 for `*.blend`, `*.glb`, atlases (§6.1). |
+| 5 | Traffic / pedestrians | **Out of scope.** This milestone is static buildings and street blocks only (rule 11). |
+| 6 | Renderer | **Not `gl_compatibility`.** Forward+ (§7.1). |
+
+Still open (ask the owner when you reach them, don't guess): (a) the final art direction after the Phase 0 A/B; (b) whether to buy any paid HK-specific kit listed in §3.1 (needs owner approval and licence review); (c) permission to download the Lands Department models (§3.1) — they are large, so state the file, source and size before downloading.
 
 ---
 
@@ -326,3 +392,4 @@ Each phase ends with: green checks, updated captures, a short note appended to `
 - Trim-sheet kits: [Modular cathedral kit](https://sigilsvault.itch.io/modular-cathedral-kit)
 - Google/Cesium terms: [Cesium community: can I make a videogame](https://community.cesium.com/t/can-i-make-a-videogame-with-cesium-for-unreal/28962), [Google 3D Tiles attribution](https://community.cesium.com/t/google-photorealistic-tiles-copyright-attribution/23999)
 - Photo references: see §2 (Wikimedia Commons)
+- Reusable data, tools and content: see §3.1 (each item linked inline there)
